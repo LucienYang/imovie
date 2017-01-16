@@ -1,0 +1,1818 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'mongoose' ]
+2 info using npm@3.8.9
+3 info using node@v6.2.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData mongoose
+8 silly fetchNamedPackageData mongoose
+9 silly mapToRegistry name mongoose
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'mongoose',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   name: 'mongoose',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+14 verbose request uri https://registry.npmjs.org/mongoose
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 18:17:00
+17 verbose request id 2c505c95b3c305b8
+18 verbose etag W/"5871996f-85a44"
+19 verbose lastModified Sun, 08 Jan 2017 01:44:15 GMT
+20 http request GET https://registry.npmjs.org/mongoose
+21 http 304 https://registry.npmjs.org/mongoose
+22 verbose headers { date: 'Sun, 15 Jan 2017 10:17:01 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"5871996f-85a44"',
+22 verbose headers   age: '263',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-hkg6821-HKG',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '2',
+22 verbose headers   'x-timer': 'S1484475421.875226,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Sun, 15 Jan 2017 10:17:01 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"5871996f-85a44"',
+23 silly get     age: '263',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-hkg6821-HKG',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '2',
+23 silly get     'x-timer': 'S1484475421.875226,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding' } ]
+24 verbose etag https://registry.npmjs.org/mongoose from cache
+25 verbose get saving mongoose to /home/yanglu/.npm/registry.npmjs.org/mongoose/.cache.json
+26 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule mongoose@4.7.6 checking installable status
+40 silly cache add args [ 'mongoose', null ]
+41 verbose cache add spec mongoose
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'mongoose',
+42 silly cache add   scope: null,
+42 silly cache add   name: 'mongoose',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed mongoose@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for mongoose
+45 info addNameTag [ 'mongoose', 'latest' ]
+46 silly mapToRegistry name mongoose
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'mongoose',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   name: 'mongoose',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/mongoose
+51 verbose addNameTag registry:https://registry.npmjs.org/mongoose not in flight; fetching
+52 verbose get https://registry.npmjs.org/mongoose not expired, no request
+53 silly addNameTag next cb for mongoose with tag latest
+54 silly addNamed mongoose@4.7.6
+55 verbose addNamed "4.7.6" is a plain semver version for mongoose
+56 silly cache afterAdd mongoose@4.7.6
+57 verbose afterAdd /home/yanglu/.npm/mongoose/4.7.6/package/package.json not in flight; writing
+58 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/yanglu/.npm/mongoose/4.7.6/package/package.json written
+60 silly fetchNamedPackageData async
+61 silly mapToRegistry name async
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'async',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   name: 'async',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/async
+66 silly fetchNamedPackageData ms
+67 silly mapToRegistry name ms
+68 silly mapToRegistry using default registry
+69 silly mapToRegistry registry https://registry.npmjs.org/
+70 silly mapToRegistry data Result {
+70 silly mapToRegistry   raw: 'ms',
+70 silly mapToRegistry   scope: null,
+70 silly mapToRegistry   name: 'ms',
+70 silly mapToRegistry   rawSpec: '',
+70 silly mapToRegistry   spec: 'latest',
+70 silly mapToRegistry   type: 'tag' }
+71 silly mapToRegistry uri https://registry.npmjs.org/ms
+72 verbose request uri https://registry.npmjs.org/ms
+73 verbose request no auth needed
+74 info attempt registry request try #1 at 18:17:02
+75 verbose etag W/"5865d365-2c43"
+76 verbose lastModified Fri, 30 Dec 2016 03:24:21 GMT
+77 http request GET https://registry.npmjs.org/ms
+78 verbose request uri https://registry.npmjs.org/async
+79 verbose request no auth needed
+80 info attempt registry request try #1 at 18:17:02
+81 verbose etag W/"587a09ef-1d35e"
+82 verbose lastModified Sat, 14 Jan 2017 11:22:23 GMT
+83 http request GET https://registry.npmjs.org/async
+84 http 304 https://registry.npmjs.org/ms
+85 verbose headers { date: 'Sun, 15 Jan 2017 10:17:02 GMT',
+85 verbose headers   via: '1.1 varnish',
+85 verbose headers   'cache-control': 'max-age=300',
+85 verbose headers   etag: 'W/"5865d365-2c43"',
+85 verbose headers   age: '72',
+85 verbose headers   connection: 'keep-alive',
+85 verbose headers   'x-served-by': 'cache-hkg6821-HKG',
+85 verbose headers   'x-cache': 'HIT',
+85 verbose headers   'x-cache-hits': '3',
+85 verbose headers   'x-timer': 'S1484475422.320553,VS0,VE0',
+85 verbose headers   vary: 'Accept-Encoding' }
+86 silly get cb [ 304,
+86 silly get   { date: 'Sun, 15 Jan 2017 10:17:02 GMT',
+86 silly get     via: '1.1 varnish',
+86 silly get     'cache-control': 'max-age=300',
+86 silly get     etag: 'W/"5865d365-2c43"',
+86 silly get     age: '72',
+86 silly get     connection: 'keep-alive',
+86 silly get     'x-served-by': 'cache-hkg6821-HKG',
+86 silly get     'x-cache': 'HIT',
+86 silly get     'x-cache-hits': '3',
+86 silly get     'x-timer': 'S1484475422.320553,VS0,VE0',
+86 silly get     vary: 'Accept-Encoding' } ]
+87 verbose etag https://registry.npmjs.org/ms from cache
+88 verbose get saving ms to /home/yanglu/.npm/registry.npmjs.org/ms/.cache.json
+89 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+90 silly resolveWithNewModule ms@0.7.2 checking installable status
+91 silly cache add args [ 'ms@0.7.2', null ]
+92 verbose cache add spec ms@0.7.2
+93 silly cache add parsed spec Result {
+93 silly cache add   raw: 'ms@0.7.2',
+93 silly cache add   scope: null,
+93 silly cache add   name: 'ms',
+93 silly cache add   rawSpec: '0.7.2',
+93 silly cache add   spec: '0.7.2',
+93 silly cache add   type: 'version' }
+94 silly addNamed ms@0.7.2
+95 verbose addNamed "0.7.2" is a plain semver version for ms
+96 silly mapToRegistry name ms
+97 silly mapToRegistry using default registry
+98 silly mapToRegistry registry https://registry.npmjs.org/
+99 silly mapToRegistry data Result {
+99 silly mapToRegistry   raw: 'ms',
+99 silly mapToRegistry   scope: null,
+99 silly mapToRegistry   name: 'ms',
+99 silly mapToRegistry   rawSpec: '',
+99 silly mapToRegistry   spec: 'latest',
+99 silly mapToRegistry   type: 'tag' }
+100 silly mapToRegistry uri https://registry.npmjs.org/ms
+101 verbose addNameVersion registry:https://registry.npmjs.org/ms not in flight; fetching
+102 verbose get https://registry.npmjs.org/ms not expired, no request
+103 silly cache afterAdd ms@0.7.2
+104 verbose afterAdd /home/yanglu/.npm/ms/0.7.2/package/package.json not in flight; writing
+105 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+106 verbose afterAdd /home/yanglu/.npm/ms/0.7.2/package/package.json written
+107 http 304 https://registry.npmjs.org/async
+108 verbose headers { date: 'Sun, 15 Jan 2017 10:17:02 GMT',
+108 verbose headers   via: '1.1 varnish',
+108 verbose headers   'cache-control': 'max-age=300',
+108 verbose headers   etag: 'W/"587a09ef-1d35e"',
+108 verbose headers   age: '116',
+108 verbose headers   connection: 'keep-alive',
+108 verbose headers   'x-served-by': 'cache-hkg6824-HKG',
+108 verbose headers   'x-cache': 'HIT',
+108 verbose headers   'x-cache-hits': '8',
+108 verbose headers   'x-timer': 'S1484475422.512175,VS0,VE0',
+108 verbose headers   vary: 'Accept-Encoding' }
+109 silly get cb [ 304,
+109 silly get   { date: 'Sun, 15 Jan 2017 10:17:02 GMT',
+109 silly get     via: '1.1 varnish',
+109 silly get     'cache-control': 'max-age=300',
+109 silly get     etag: 'W/"587a09ef-1d35e"',
+109 silly get     age: '116',
+109 silly get     connection: 'keep-alive',
+109 silly get     'x-served-by': 'cache-hkg6824-HKG',
+109 silly get     'x-cache': 'HIT',
+109 silly get     'x-cache-hits': '8',
+109 silly get     'x-timer': 'S1484475422.512175,VS0,VE0',
+109 silly get     vary: 'Accept-Encoding' } ]
+110 verbose etag https://registry.npmjs.org/async from cache
+111 verbose get saving async to /home/yanglu/.npm/registry.npmjs.org/async/.cache.json
+112 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+113 silly resolveWithNewModule async@2.1.4 checking installable status
+114 silly cache add args [ 'async@2.1.4', null ]
+115 verbose cache add spec async@2.1.4
+116 silly cache add parsed spec Result {
+116 silly cache add   raw: 'async@2.1.4',
+116 silly cache add   scope: null,
+116 silly cache add   name: 'async',
+116 silly cache add   rawSpec: '2.1.4',
+116 silly cache add   spec: '2.1.4',
+116 silly cache add   type: 'version' }
+117 silly addNamed async@2.1.4
+118 verbose addNamed "2.1.4" is a plain semver version for async
+119 silly mapToRegistry name async
+120 silly mapToRegistry using default registry
+121 silly mapToRegistry registry https://registry.npmjs.org/
+122 silly mapToRegistry data Result {
+122 silly mapToRegistry   raw: 'async',
+122 silly mapToRegistry   scope: null,
+122 silly mapToRegistry   name: 'async',
+122 silly mapToRegistry   rawSpec: '',
+122 silly mapToRegistry   spec: 'latest',
+122 silly mapToRegistry   type: 'tag' }
+123 silly mapToRegistry uri https://registry.npmjs.org/async
+124 verbose addNameVersion registry:https://registry.npmjs.org/async not in flight; fetching
+125 verbose get https://registry.npmjs.org/async not expired, no request
+126 silly cache afterAdd async@2.1.4
+127 verbose afterAdd /home/yanglu/.npm/async/2.1.4/package/package.json not in flight; writing
+128 verbose correctMkdir /home/yanglu/.npm correctMkdir not in flight; initializing
+129 verbose afterAdd /home/yanglu/.npm/async/2.1.4/package/package.json written
+130 silly loadAllDepsIntoIdealTree Finishing
+131 silly idealTree:prePrune imovie
+131 silly idealTree:prePrune ├── accepts@1.3.3
+131 silly idealTree:prePrune ├── acorn-globals@1.0.9
+131 silly idealTree:prePrune ├── acorn@2.7.0
+131 silly idealTree:prePrune ├── align-text@0.1.4
+131 silly idealTree:prePrune ├── amdefine@1.0.1
+131 silly idealTree:prePrune ├── array-flatten@1.1.1
+131 silly idealTree:prePrune ├── asap@1.0.0
+131 silly idealTree:prePrune ├── async@0.2.10
+131 silly idealTree:prePrune ├── bluebird@2.10.2
+131 silly idealTree:prePrune ├── body-parser@1.15.2
+131 silly idealTree:prePrune ├── bson@1.0.4
+131 silly idealTree:prePrune ├── buffer-shims@1.0.0
+131 silly idealTree:prePrune ├── bytes@2.4.0
+131 silly idealTree:prePrune ├── camelcase@1.2.1
+131 silly idealTree:prePrune ├── center-align@0.1.3
+131 silly idealTree:prePrune ├── character-parser@1.2.1
+131 silly idealTree:prePrune ├─┬ clean-css@3.4.23
+131 silly idealTree:prePrune │ └── commander@2.8.1
+131 silly idealTree:prePrune ├─┬ cliui@2.1.0
+131 silly idealTree:prePrune │ └── wordwrap@0.0.2
+131 silly idealTree:prePrune ├── commander@2.6.0
+131 silly idealTree:prePrune ├── constantinople@3.0.2
+131 silly idealTree:prePrune ├── content-disposition@0.5.1
+131 silly idealTree:prePrune ├── content-type@1.0.2
+131 silly idealTree:prePrune ├── cookie-signature@1.0.6
+131 silly idealTree:prePrune ├── cookie@0.3.1
+131 silly idealTree:prePrune ├── core-util-is@1.0.2
+131 silly idealTree:prePrune ├── css-parse@1.0.4
+131 silly idealTree:prePrune ├── css-stringify@1.0.5
+131 silly idealTree:prePrune ├── css@1.0.8
+131 silly idealTree:prePrune ├── debug@2.2.0
+131 silly idealTree:prePrune ├── decamelize@1.2.0
+131 silly idealTree:prePrune ├── depd@1.1.0
+131 silly idealTree:prePrune ├── destroy@1.0.4
+131 silly idealTree:prePrune ├── ee-first@1.1.1
+131 silly idealTree:prePrune ├── encodeurl@1.0.1
+131 silly idealTree:prePrune ├── es6-promise@3.2.1
+131 silly idealTree:prePrune ├── escape-html@1.0.3
+131 silly idealTree:prePrune ├── etag@1.7.0
+131 silly idealTree:prePrune ├── express@4.14.0
+131 silly idealTree:prePrune ├── finalhandler@0.5.0
+131 silly idealTree:prePrune ├── forwarded@0.1.0
+131 silly idealTree:prePrune ├── fresh@0.3.0
+131 silly idealTree:prePrune ├── graceful-readlink@1.0.1
+131 silly idealTree:prePrune ├── hooks-fixed@1.2.0
+131 silly idealTree:prePrune ├── http-errors@1.5.1
+131 silly idealTree:prePrune ├── iconv-lite@0.4.13
+131 silly idealTree:prePrune ├── inherits@2.0.3
+131 silly idealTree:prePrune ├── ipaddr.js@1.1.1
+131 silly idealTree:prePrune ├── is-buffer@1.1.4
+131 silly idealTree:prePrune ├── is-promise@2.1.0
+131 silly idealTree:prePrune ├── isarray@1.0.0
+131 silly idealTree:prePrune ├── jade@1.11.0
+131 silly idealTree:prePrune ├── jstransformer@0.0.2
+131 silly idealTree:prePrune ├── kareem@1.2.0
+131 silly idealTree:prePrune ├── kind-of@3.1.0
+131 silly idealTree:prePrune ├── lazy-cache@1.0.4
+131 silly idealTree:prePrune ├── lodash@4.17.4
+131 silly idealTree:prePrune ├── longest@1.0.1
+131 silly idealTree:prePrune ├── media-typer@0.3.0
+131 silly idealTree:prePrune ├── merge-descriptors@1.0.1
+131 silly idealTree:prePrune ├── methods@1.1.2
+131 silly idealTree:prePrune ├── mime-db@1.25.0
+131 silly idealTree:prePrune ├── mime-types@2.1.13
+131 silly idealTree:prePrune ├── mime@1.3.4
+131 silly idealTree:prePrune ├── minimist@0.0.8
+131 silly idealTree:prePrune ├── mkdirp@0.5.1
+131 silly idealTree:prePrune ├── moment@2.17.1
+131 silly idealTree:prePrune ├── mongodb-core@2.1.2
+131 silly idealTree:prePrune ├── mongodb@2.2.16
+131 silly idealTree:prePrune ├─┬ mongoose@4.7.6
+131 silly idealTree:prePrune │ ├── async@2.1.4
+131 silly idealTree:prePrune │ └── ms@0.7.2
+131 silly idealTree:prePrune ├── mpath@0.2.1
+131 silly idealTree:prePrune ├── mpromise@0.5.5
+131 silly idealTree:prePrune ├─┬ mquery@2.0.0
+131 silly idealTree:prePrune │ └── sliced@0.0.5
+131 silly idealTree:prePrune ├── ms@0.7.1
+131 silly idealTree:prePrune ├── muri@1.1.1
+131 silly idealTree:prePrune ├── negotiator@0.6.1
+131 silly idealTree:prePrune ├── on-finished@2.3.0
+131 silly idealTree:prePrune ├── optimist@0.3.7
+131 silly idealTree:prePrune ├── parseurl@1.3.1
+131 silly idealTree:prePrune ├── path-to-regexp@0.1.7
+131 silly idealTree:prePrune ├── process-nextick-args@1.0.7
+131 silly idealTree:prePrune ├── promise@6.1.0
+131 silly idealTree:prePrune ├── proxy-addr@1.1.2
+131 silly idealTree:prePrune ├── qs@6.2.0
+131 silly idealTree:prePrune ├── range-parser@1.2.0
+131 silly idealTree:prePrune ├── raw-body@2.1.7
+131 silly idealTree:prePrune ├── readable-stream@2.1.5
+131 silly idealTree:prePrune ├── regexp-clone@0.0.1
+131 silly idealTree:prePrune ├── repeat-string@1.6.1
+131 silly idealTree:prePrune ├── require_optional@1.0.0
+131 silly idealTree:prePrune ├── resolve-from@2.0.0
+131 silly idealTree:prePrune ├── right-align@0.1.3
+131 silly idealTree:prePrune ├── semver@5.3.0
+131 silly idealTree:prePrune ├── send@0.14.1
+131 silly idealTree:prePrune ├── serve-static@1.11.1
+131 silly idealTree:prePrune ├── setprototypeof@1.0.2
+131 silly idealTree:prePrune ├── sliced@1.0.1
+131 silly idealTree:prePrune ├── source-map@0.4.4
+131 silly idealTree:prePrune ├── statuses@1.3.1
+131 silly idealTree:prePrune ├── string_decoder@0.10.31
+131 silly idealTree:prePrune ├─┬ transformers@2.1.0
+131 silly idealTree:prePrune │ ├── is-promise@1.0.1
+131 silly idealTree:prePrune │ ├── promise@2.0.0
+131 silly idealTree:prePrune │ ├── source-map@0.1.43
+131 silly idealTree:prePrune │ └── uglify-js@2.2.5
+131 silly idealTree:prePrune ├── type-is@1.6.14
+131 silly idealTree:prePrune ├─┬ uglify-js@2.7.5
+131 silly idealTree:prePrune │ └── source-map@0.5.6
+131 silly idealTree:prePrune ├── uglify-to-browserify@1.0.2
+131 silly idealTree:prePrune ├── underscore@1.8.3
+131 silly idealTree:prePrune ├── unpipe@1.0.0
+131 silly idealTree:prePrune ├── util-deprecate@1.0.2
+131 silly idealTree:prePrune ├── utils-merge@1.0.0
+131 silly idealTree:prePrune ├── vary@1.1.0
+131 silly idealTree:prePrune ├── void-elements@2.0.1
+131 silly idealTree:prePrune ├── window-size@0.1.0
+131 silly idealTree:prePrune ├─┬ with@4.0.3
+131 silly idealTree:prePrune │ └── acorn@1.2.2
+131 silly idealTree:prePrune ├── wordwrap@0.0.3
+131 silly idealTree:prePrune └── yargs@3.10.0
+132 silly loadIdealTree Finishing
+133 silly currentTree imovie
+133 silly currentTree ├── accepts@1.3.3
+133 silly currentTree ├── acorn-globals@1.0.9
+133 silly currentTree ├── acorn@2.7.0
+133 silly currentTree ├── align-text@0.1.4
+133 silly currentTree ├── amdefine@1.0.1
+133 silly currentTree ├── array-flatten@1.1.1
+133 silly currentTree ├── asap@1.0.0
+133 silly currentTree ├── async@0.2.10
+133 silly currentTree ├── bluebird@2.10.2
+133 silly currentTree ├── body-parser@1.15.2
+133 silly currentTree ├── bson@1.0.4
+133 silly currentTree ├── buffer-shims@1.0.0
+133 silly currentTree ├── bytes@2.4.0
+133 silly currentTree ├── camelcase@1.2.1
+133 silly currentTree ├── center-align@0.1.3
+133 silly currentTree ├── character-parser@1.2.1
+133 silly currentTree ├─┬ clean-css@3.4.23
+133 silly currentTree │ └── commander@2.8.1
+133 silly currentTree ├─┬ cliui@2.1.0
+133 silly currentTree │ └── wordwrap@0.0.2
+133 silly currentTree ├── commander@2.6.0
+133 silly currentTree ├── constantinople@3.0.2
+133 silly currentTree ├── content-disposition@0.5.1
+133 silly currentTree ├── content-type@1.0.2
+133 silly currentTree ├── cookie-signature@1.0.6
+133 silly currentTree ├── cookie@0.3.1
+133 silly currentTree ├── core-util-is@1.0.2
+133 silly currentTree ├── css-parse@1.0.4
+133 silly currentTree ├── css-stringify@1.0.5
+133 silly currentTree ├── css@1.0.8
+133 silly currentTree ├── debug@2.2.0
+133 silly currentTree ├── decamelize@1.2.0
+133 silly currentTree ├── depd@1.1.0
+133 silly currentTree ├── destroy@1.0.4
+133 silly currentTree ├── ee-first@1.1.1
+133 silly currentTree ├── encodeurl@1.0.1
+133 silly currentTree ├── es6-promise@3.2.1
+133 silly currentTree ├── escape-html@1.0.3
+133 silly currentTree ├── etag@1.7.0
+133 silly currentTree ├── express@4.14.0
+133 silly currentTree ├── finalhandler@0.5.0
+133 silly currentTree ├── forwarded@0.1.0
+133 silly currentTree ├── fresh@0.3.0
+133 silly currentTree ├── graceful-readlink@1.0.1
+133 silly currentTree ├── hooks-fixed@1.2.0
+133 silly currentTree ├── http-errors@1.5.1
+133 silly currentTree ├── iconv-lite@0.4.13
+133 silly currentTree ├── inherits@2.0.3
+133 silly currentTree ├── ipaddr.js@1.1.1
+133 silly currentTree ├── is-buffer@1.1.4
+133 silly currentTree ├── is-promise@2.1.0
+133 silly currentTree ├── isarray@1.0.0
+133 silly currentTree ├── jade@1.11.0
+133 silly currentTree ├── jstransformer@0.0.2
+133 silly currentTree ├── kareem@1.2.0
+133 silly currentTree ├── kind-of@3.1.0
+133 silly currentTree ├── lazy-cache@1.0.4
+133 silly currentTree ├── lodash@4.17.4
+133 silly currentTree ├── longest@1.0.1
+133 silly currentTree ├── media-typer@0.3.0
+133 silly currentTree ├── merge-descriptors@1.0.1
+133 silly currentTree ├── methods@1.1.2
+133 silly currentTree ├── mime-db@1.25.0
+133 silly currentTree ├── mime-types@2.1.13
+133 silly currentTree ├── mime@1.3.4
+133 silly currentTree ├── minimist@0.0.8
+133 silly currentTree ├── mkdirp@0.5.1
+133 silly currentTree ├── moment@2.17.1
+133 silly currentTree ├── mongodb-core@2.1.2
+133 silly currentTree ├── mongodb@2.2.16
+133 silly currentTree ├── mpath@0.2.1
+133 silly currentTree ├── mpromise@0.5.5
+133 silly currentTree ├─┬ mquery@2.0.0
+133 silly currentTree │ └── sliced@0.0.5
+133 silly currentTree ├── ms@0.7.1
+133 silly currentTree ├── muri@1.1.1
+133 silly currentTree ├── negotiator@0.6.1
+133 silly currentTree ├── on-finished@2.3.0
+133 silly currentTree ├── optimist@0.3.7
+133 silly currentTree ├── parseurl@1.3.1
+133 silly currentTree ├── path-to-regexp@0.1.7
+133 silly currentTree ├── process-nextick-args@1.0.7
+133 silly currentTree ├── promise@6.1.0
+133 silly currentTree ├── proxy-addr@1.1.2
+133 silly currentTree ├── qs@6.2.0
+133 silly currentTree ├── range-parser@1.2.0
+133 silly currentTree ├── raw-body@2.1.7
+133 silly currentTree ├── readable-stream@2.1.5
+133 silly currentTree ├── regexp-clone@0.0.1
+133 silly currentTree ├── repeat-string@1.6.1
+133 silly currentTree ├── require_optional@1.0.0
+133 silly currentTree ├── resolve-from@2.0.0
+133 silly currentTree ├── right-align@0.1.3
+133 silly currentTree ├── semver@5.3.0
+133 silly currentTree ├── send@0.14.1
+133 silly currentTree ├── serve-static@1.11.1
+133 silly currentTree ├── setprototypeof@1.0.2
+133 silly currentTree ├── sliced@1.0.1
+133 silly currentTree ├── source-map@0.4.4
+133 silly currentTree ├── statuses@1.3.1
+133 silly currentTree ├── string_decoder@0.10.31
+133 silly currentTree ├─┬ transformers@2.1.0
+133 silly currentTree │ ├── is-promise@1.0.1
+133 silly currentTree │ ├── promise@2.0.0
+133 silly currentTree │ ├── source-map@0.1.43
+133 silly currentTree │ └── uglify-js@2.2.5
+133 silly currentTree ├── type-is@1.6.14
+133 silly currentTree ├─┬ uglify-js@2.7.5
+133 silly currentTree │ └── source-map@0.5.6
+133 silly currentTree ├── uglify-to-browserify@1.0.2
+133 silly currentTree ├── underscore@1.8.3
+133 silly currentTree ├── unpipe@1.0.0
+133 silly currentTree ├── util-deprecate@1.0.2
+133 silly currentTree ├── utils-merge@1.0.0
+133 silly currentTree ├── vary@1.1.0
+133 silly currentTree ├── void-elements@2.0.1
+133 silly currentTree ├── window-size@0.1.0
+133 silly currentTree ├─┬ with@4.0.3
+133 silly currentTree │ └── acorn@1.2.2
+133 silly currentTree ├── wordwrap@0.0.3
+133 silly currentTree └── yargs@3.10.0
+134 silly idealTree imovie
+134 silly idealTree ├── accepts@1.3.3
+134 silly idealTree ├── acorn-globals@1.0.9
+134 silly idealTree ├── acorn@2.7.0
+134 silly idealTree ├── align-text@0.1.4
+134 silly idealTree ├── amdefine@1.0.1
+134 silly idealTree ├── array-flatten@1.1.1
+134 silly idealTree ├── asap@1.0.0
+134 silly idealTree ├── async@0.2.10
+134 silly idealTree ├── bluebird@2.10.2
+134 silly idealTree ├── body-parser@1.15.2
+134 silly idealTree ├── bson@1.0.4
+134 silly idealTree ├── buffer-shims@1.0.0
+134 silly idealTree ├── bytes@2.4.0
+134 silly idealTree ├── camelcase@1.2.1
+134 silly idealTree ├── center-align@0.1.3
+134 silly idealTree ├── character-parser@1.2.1
+134 silly idealTree ├─┬ clean-css@3.4.23
+134 silly idealTree │ └── commander@2.8.1
+134 silly idealTree ├─┬ cliui@2.1.0
+134 silly idealTree │ └── wordwrap@0.0.2
+134 silly idealTree ├── commander@2.6.0
+134 silly idealTree ├── constantinople@3.0.2
+134 silly idealTree ├── content-disposition@0.5.1
+134 silly idealTree ├── content-type@1.0.2
+134 silly idealTree ├── cookie-signature@1.0.6
+134 silly idealTree ├── cookie@0.3.1
+134 silly idealTree ├── core-util-is@1.0.2
+134 silly idealTree ├── css-parse@1.0.4
+134 silly idealTree ├── css-stringify@1.0.5
+134 silly idealTree ├── css@1.0.8
+134 silly idealTree ├── debug@2.2.0
+134 silly idealTree ├── decamelize@1.2.0
+134 silly idealTree ├── depd@1.1.0
+134 silly idealTree ├── destroy@1.0.4
+134 silly idealTree ├── ee-first@1.1.1
+134 silly idealTree ├── encodeurl@1.0.1
+134 silly idealTree ├── es6-promise@3.2.1
+134 silly idealTree ├── escape-html@1.0.3
+134 silly idealTree ├── etag@1.7.0
+134 silly idealTree ├── express@4.14.0
+134 silly idealTree ├── finalhandler@0.5.0
+134 silly idealTree ├── forwarded@0.1.0
+134 silly idealTree ├── fresh@0.3.0
+134 silly idealTree ├── graceful-readlink@1.0.1
+134 silly idealTree ├── hooks-fixed@1.2.0
+134 silly idealTree ├── http-errors@1.5.1
+134 silly idealTree ├── iconv-lite@0.4.13
+134 silly idealTree ├── inherits@2.0.3
+134 silly idealTree ├── ipaddr.js@1.1.1
+134 silly idealTree ├── is-buffer@1.1.4
+134 silly idealTree ├── is-promise@2.1.0
+134 silly idealTree ├── isarray@1.0.0
+134 silly idealTree ├── jade@1.11.0
+134 silly idealTree ├── jstransformer@0.0.2
+134 silly idealTree ├── kareem@1.2.0
+134 silly idealTree ├── kind-of@3.1.0
+134 silly idealTree ├── lazy-cache@1.0.4
+134 silly idealTree ├── lodash@4.17.4
+134 silly idealTree ├── longest@1.0.1
+134 silly idealTree ├── media-typer@0.3.0
+134 silly idealTree ├── merge-descriptors@1.0.1
+134 silly idealTree ├── methods@1.1.2
+134 silly idealTree ├── mime-db@1.25.0
+134 silly idealTree ├── mime-types@2.1.13
+134 silly idealTree ├── mime@1.3.4
+134 silly idealTree ├── minimist@0.0.8
+134 silly idealTree ├── mkdirp@0.5.1
+134 silly idealTree ├── moment@2.17.1
+134 silly idealTree ├── mongodb-core@2.1.2
+134 silly idealTree ├── mongodb@2.2.16
+134 silly idealTree ├─┬ mongoose@4.7.6
+134 silly idealTree │ ├── async@2.1.4
+134 silly idealTree │ └── ms@0.7.2
+134 silly idealTree ├── mpath@0.2.1
+134 silly idealTree ├── mpromise@0.5.5
+134 silly idealTree ├─┬ mquery@2.0.0
+134 silly idealTree │ └── sliced@0.0.5
+134 silly idealTree ├── ms@0.7.1
+134 silly idealTree ├── muri@1.1.1
+134 silly idealTree ├── negotiator@0.6.1
+134 silly idealTree ├── on-finished@2.3.0
+134 silly idealTree ├── optimist@0.3.7
+134 silly idealTree ├── parseurl@1.3.1
+134 silly idealTree ├── path-to-regexp@0.1.7
+134 silly idealTree ├── process-nextick-args@1.0.7
+134 silly idealTree ├── promise@6.1.0
+134 silly idealTree ├── proxy-addr@1.1.2
+134 silly idealTree ├── qs@6.2.0
+134 silly idealTree ├── range-parser@1.2.0
+134 silly idealTree ├── raw-body@2.1.7
+134 silly idealTree ├── readable-stream@2.1.5
+134 silly idealTree ├── regexp-clone@0.0.1
+134 silly idealTree ├── repeat-string@1.6.1
+134 silly idealTree ├── require_optional@1.0.0
+134 silly idealTree ├── resolve-from@2.0.0
+134 silly idealTree ├── right-align@0.1.3
+134 silly idealTree ├── semver@5.3.0
+134 silly idealTree ├── send@0.14.1
+134 silly idealTree ├── serve-static@1.11.1
+134 silly idealTree ├── setprototypeof@1.0.2
+134 silly idealTree ├── sliced@1.0.1
+134 silly idealTree ├── source-map@0.4.4
+134 silly idealTree ├── statuses@1.3.1
+134 silly idealTree ├── string_decoder@0.10.31
+134 silly idealTree ├─┬ transformers@2.1.0
+134 silly idealTree │ ├── is-promise@1.0.1
+134 silly idealTree │ ├── promise@2.0.0
+134 silly idealTree │ ├── source-map@0.1.43
+134 silly idealTree │ └── uglify-js@2.2.5
+134 silly idealTree ├── type-is@1.6.14
+134 silly idealTree ├─┬ uglify-js@2.7.5
+134 silly idealTree │ └── source-map@0.5.6
+134 silly idealTree ├── uglify-to-browserify@1.0.2
+134 silly idealTree ├── underscore@1.8.3
+134 silly idealTree ├── unpipe@1.0.0
+134 silly idealTree ├── util-deprecate@1.0.2
+134 silly idealTree ├── utils-merge@1.0.0
+134 silly idealTree ├── vary@1.1.0
+134 silly idealTree ├── void-elements@2.0.1
+134 silly idealTree ├── window-size@0.1.0
+134 silly idealTree ├─┬ with@4.0.3
+134 silly idealTree │ └── acorn@1.2.2
+134 silly idealTree ├── wordwrap@0.0.3
+134 silly idealTree └── yargs@3.10.0
+135 silly generateActionsToTake Starting
+136 silly install generateActionsToTake
+137 silly generateActionsToTake Finishing
+138 silly diffTrees action count 8
+139 silly diffTrees add async@2.1.4
+140 silly diffTrees add ms@0.7.2
+141 silly diffTrees update body-parser@1.15.2
+142 silly diffTrees update express@4.14.0
+143 silly diffTrees update jade@1.11.0
+144 silly diffTrees update moment@2.17.1
+145 silly diffTrees add mongoose@4.7.6
+146 silly diffTrees update underscore@1.8.3
+147 silly decomposeActions action count 64
+148 silly decomposeActions fetch async@2.1.4
+149 silly decomposeActions extract async@2.1.4
+150 silly decomposeActions test async@2.1.4
+151 silly decomposeActions preinstall async@2.1.4
+152 silly decomposeActions build async@2.1.4
+153 silly decomposeActions install async@2.1.4
+154 silly decomposeActions postinstall async@2.1.4
+155 silly decomposeActions finalize async@2.1.4
+156 silly decomposeActions fetch ms@0.7.2
+157 silly decomposeActions extract ms@0.7.2
+158 silly decomposeActions test ms@0.7.2
+159 silly decomposeActions preinstall ms@0.7.2
+160 silly decomposeActions build ms@0.7.2
+161 silly decomposeActions install ms@0.7.2
+162 silly decomposeActions postinstall ms@0.7.2
+163 silly decomposeActions finalize ms@0.7.2
+164 silly decomposeActions fetch body-parser@1.15.2
+165 silly decomposeActions extract body-parser@1.15.2
+166 silly decomposeActions test body-parser@1.15.2
+167 silly decomposeActions preinstall body-parser@1.15.2
+168 silly decomposeActions build body-parser@1.15.2
+169 silly decomposeActions install body-parser@1.15.2
+170 silly decomposeActions postinstall body-parser@1.15.2
+171 silly decomposeActions finalize body-parser@1.15.2
+172 silly decomposeActions fetch express@4.14.0
+173 silly decomposeActions extract express@4.14.0
+174 silly decomposeActions test express@4.14.0
+175 silly decomposeActions preinstall express@4.14.0
+176 silly decomposeActions build express@4.14.0
+177 silly decomposeActions install express@4.14.0
+178 silly decomposeActions postinstall express@4.14.0
+179 silly decomposeActions finalize express@4.14.0
+180 silly decomposeActions fetch jade@1.11.0
+181 silly decomposeActions extract jade@1.11.0
+182 silly decomposeActions test jade@1.11.0
+183 silly decomposeActions preinstall jade@1.11.0
+184 silly decomposeActions build jade@1.11.0
+185 silly decomposeActions install jade@1.11.0
+186 silly decomposeActions postinstall jade@1.11.0
+187 silly decomposeActions finalize jade@1.11.0
+188 silly decomposeActions fetch moment@2.17.1
+189 silly decomposeActions extract moment@2.17.1
+190 silly decomposeActions test moment@2.17.1
+191 silly decomposeActions preinstall moment@2.17.1
+192 silly decomposeActions build moment@2.17.1
+193 silly decomposeActions install moment@2.17.1
+194 silly decomposeActions postinstall moment@2.17.1
+195 silly decomposeActions finalize moment@2.17.1
+196 silly decomposeActions fetch mongoose@4.7.6
+197 silly decomposeActions extract mongoose@4.7.6
+198 silly decomposeActions test mongoose@4.7.6
+199 silly decomposeActions preinstall mongoose@4.7.6
+200 silly decomposeActions build mongoose@4.7.6
+201 silly decomposeActions install mongoose@4.7.6
+202 silly decomposeActions postinstall mongoose@4.7.6
+203 silly decomposeActions finalize mongoose@4.7.6
+204 silly decomposeActions fetch underscore@1.8.3
+205 silly decomposeActions extract underscore@1.8.3
+206 silly decomposeActions test underscore@1.8.3
+207 silly decomposeActions preinstall underscore@1.8.3
+208 silly decomposeActions build underscore@1.8.3
+209 silly decomposeActions install underscore@1.8.3
+210 silly decomposeActions postinstall underscore@1.8.3
+211 silly decomposeActions finalize underscore@1.8.3
+212 silly executeActions Starting
+213 silly install executeActions
+214 silly doSerial global-install 0
+215 silly doParallel fetch 8
+216 verbose correctMkdir /home/yanglu/.npm/_locks correctMkdir not in flight; initializing
+217 verbose lock using /home/yanglu/.npm/_locks/staging-03dc53a759d8c059.lock for /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging
+218 silly doParallel extract 8
+219 silly extract async@2.1.4
+220 silly extract ms@0.7.2
+221 silly extract body-parser@1.15.2
+222 silly extract express@4.14.0
+223 silly extract jade@1.11.0
+224 silly extract moment@2.17.1
+225 silly extract mongoose@4.7.6
+226 silly extract underscore@1.8.3
+227 verbose unbuild node_modules/.staging/async-0af260c5
+228 verbose unbuild node_modules/.staging/ms-37593586
+229 verbose unbuild node_modules/.staging/body-parser-59af9a37
+230 verbose unbuild node_modules/.staging/express-aad1c73c
+231 verbose unbuild node_modules/.staging/moment-a36e7395
+232 verbose unbuild node_modules/.staging/mongoose-d24393d6
+233 verbose unbuild node_modules/.staging/underscore-bbda732a
+234 warn deprecated jade@1.11.0: Jade has been renamed to pug, please install the latest version of pug instead of jade
+235 verbose unbuild node_modules/.staging/jade-469ec033
+236 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+237 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5
+238 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+239 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586
+240 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+241 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37
+242 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c is being purged from base /home/yanglu/文档/nodeDemo/imovie
+243 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c
+244 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+245 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395
+246 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+247 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6
+248 verbose tar unpack /home/yanglu/.npm/async/2.1.4/package.tgz
+249 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5
+250 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5 is being purged
+251 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5
+252 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a is being purged from base /home/yanglu/文档/nodeDemo/imovie
+253 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a
+254 verbose tar unpack /home/yanglu/.npm/ms/0.7.2/package.tgz
+255 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586
+256 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586 is being purged
+257 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586
+258 verbose tar unpack /home/yanglu/.npm/body-parser/1.15.2/package.tgz
+259 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37
+260 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37 is being purged
+261 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37
+262 verbose tar unpack /home/yanglu/.npm/express/4.14.0/package.tgz
+263 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c
+264 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c is being purged
+265 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c
+266 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033 is being purged from base /home/yanglu/文档/nodeDemo/imovie
+267 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033
+268 verbose tar unpack /home/yanglu/.npm/moment/2.17.1/package.tgz
+269 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395
+270 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395 is being purged
+271 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395
+272 verbose tar unpack /home/yanglu/.npm/mongoose/4.7.6/package.tgz
+273 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6
+274 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6 is being purged
+275 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6
+276 silly gunzTarPerm modes [ '755', '644' ]
+277 verbose tar unpack /home/yanglu/.npm/underscore/1.8.3/package.tgz
+278 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a
+279 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a is being purged
+280 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a
+281 silly gunzTarPerm modes [ '755', '644' ]
+282 silly gunzTarPerm modes [ '755', '644' ]
+283 silly gunzTarPerm modes [ '755', '644' ]
+284 verbose tar unpack /home/yanglu/.npm/jade/1.11.0/package.tgz
+285 verbose tar unpacking to /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033
+286 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033 is being purged
+287 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033
+288 silly gunzTarPerm modes [ '755', '644' ]
+289 silly gunzTarPerm modes [ '755', '644' ]
+290 silly gunzTarPerm modes [ '755', '644' ]
+291 silly gunzTarPerm modes [ '755', '644' ]
+292 silly gunzTarPerm extractEntry package.json
+293 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+294 silly gunzTarPerm extractEntry package.json
+295 silly gunzTarPerm extractEntry package.json
+296 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+297 silly gunzTarPerm extractEntry package.json
+298 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+299 silly gunzTarPerm extractEntry package.json
+300 silly gunzTarPerm extractEntry package.json
+301 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+302 silly gunzTarPerm extractEntry package.json
+303 silly gunzTarPerm extractEntry package.json
+304 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+305 silly gunzTarPerm extractEntry README.md
+306 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+307 silly gunzTarPerm extractEntry LICENSE
+308 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+309 silly gunzTarPerm extractEntry README.md
+310 silly gunzTarPerm extractEntry index.js
+311 silly gunzTarPerm extractEntry README.md
+312 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+313 silly gunzTarPerm extractEntry LICENSE
+314 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+315 silly gunzTarPerm extractEntry index.js
+316 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+317 silly gunzTarPerm extractEntry HISTORY.md
+318 silly gunzTarPerm modified mode [ 'HISTORY.md', 438, 420 ]
+319 silly gunzTarPerm extractEntry lib/read.js
+320 silly gunzTarPerm modified mode [ 'lib/read.js', 438, 420 ]
+321 silly gunzTarPerm extractEntry lib/types/json.js
+322 silly gunzTarPerm modified mode [ 'lib/types/json.js', 438, 420 ]
+323 silly gunzTarPerm extractEntry lib/types/raw.js
+324 silly gunzTarPerm modified mode [ 'lib/types/raw.js', 438, 420 ]
+325 silly gunzTarPerm extractEntry lib/types/text.js
+326 silly gunzTarPerm modified mode [ 'lib/types/text.js', 438, 420 ]
+327 silly gunzTarPerm extractEntry lib/types/urlencoded.js
+328 silly gunzTarPerm modified mode [ 'lib/types/urlencoded.js', 438, 420 ]
+329 silly gunzTarPerm extractEntry LICENSE
+330 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+331 silly gunzTarPerm extractEntry index.js
+332 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+333 silly gunzTarPerm extractEntry README.md
+334 silly gunzTarPerm extractEntry LICENSE
+335 silly gunzTarPerm extractEntry .npmignore
+336 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+337 silly gunzTarPerm extractEntry README.md
+338 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+339 silly gunzTarPerm extractEntry README.md
+340 silly gunzTarPerm extractEntry LICENSE
+341 silly gunzTarPerm extractEntry .npmignore
+342 silly gunzTarPerm modified mode [ '.npmignore', 436, 420 ]
+343 silly gunzTarPerm extractEntry README.md
+344 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+345 silly gunzTarPerm extractEntry eachSeries.js
+346 silly gunzTarPerm modified mode [ 'eachSeries.js', 436, 420 ]
+347 silly gunzTarPerm extractEntry filterSeries.js
+348 silly gunzTarPerm modified mode [ 'filterSeries.js', 436, 420 ]
+349 silly gunzTarPerm extractEntry LICENSE.md
+350 silly gunzTarPerm extractEntry History.md
+351 silly gunzTarPerm modified mode [ 'History.md', 438, 420 ]
+352 silly gunzTarPerm extractEntry Readme.md
+353 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+354 silly gunzTarPerm extractEntry lib/application.js
+355 silly gunzTarPerm modified mode [ 'lib/application.js', 438, 420 ]
+356 silly gunzTarPerm extractEntry lib/express.js
+357 silly gunzTarPerm modified mode [ 'lib/express.js', 438, 420 ]
+358 silly gunzTarPerm extractEntry lib/request.js
+359 silly gunzTarPerm modified mode [ 'lib/request.js', 438, 420 ]
+360 silly gunzTarPerm extractEntry lib/response.js
+361 silly gunzTarPerm modified mode [ 'lib/response.js', 438, 420 ]
+362 silly gunzTarPerm extractEntry lib/utils.js
+363 silly gunzTarPerm modified mode [ 'lib/utils.js', 438, 420 ]
+364 silly gunzTarPerm extractEntry lib/view.js
+365 silly gunzTarPerm modified mode [ 'lib/view.js', 438, 420 ]
+366 silly gunzTarPerm extractEntry lib/middleware/init.js
+367 silly gunzTarPerm modified mode [ 'lib/middleware/init.js', 438, 420 ]
+368 silly gunzTarPerm extractEntry lib/middleware/query.js
+369 silly gunzTarPerm modified mode [ 'lib/middleware/query.js', 438, 420 ]
+370 silly gunzTarPerm extractEntry lib/router/index.js
+371 silly gunzTarPerm modified mode [ 'lib/router/index.js', 438, 420 ]
+372 silly gunzTarPerm extractEntry lib/router/layer.js
+373 silly gunzTarPerm modified mode [ 'lib/router/layer.js', 438, 420 ]
+374 silly gunzTarPerm extractEntry lib/router/route.js
+375 silly gunzTarPerm modified mode [ 'lib/router/route.js', 438, 420 ]
+376 silly gunzTarPerm extractEntry ender.js
+377 silly gunzTarPerm extractEntry moment.js
+378 silly gunzTarPerm extractEntry website.js
+379 silly gunzTarPerm modified mode [ 'website.js', 436, 420 ]
+380 silly gunzTarPerm extractEntry index.js
+381 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+382 silly gunzTarPerm extractEntry underscore.js
+383 silly gunzTarPerm extractEntry underscore-min.js
+384 silly gunzTarPerm extractEntry underscore-min.map
+385 silly gunzTarPerm extractEntry LICENSE
+386 silly gunzTarPerm modified mode [ 'LICENSE', 436, 420 ]
+387 silly gunzTarPerm extractEntry jade.js
+388 silly gunzTarPerm modified mode [ 'jade.js', 436, 420 ]
+389 silly gunzTarPerm extractEntry static.js
+390 silly gunzTarPerm modified mode [ 'static.js', 436, 420 ]
+391 silly gunzTarPerm extractEntry CONTRIBUTING.md
+392 silly gunzTarPerm modified mode [ 'CONTRIBUTING.md', 436, 420 ]
+393 silly gunzTarPerm extractEntry forever.js
+394 silly gunzTarPerm modified mode [ 'forever.js', 436, 420 ]
+395 silly gunzTarPerm extractEntry eachOfSeries.js
+396 silly gunzTarPerm modified mode [ 'eachOfSeries.js', 436, 420 ]
+397 silly gunzTarPerm extractEntry package.js
+398 silly gunzTarPerm extractEntry release.js
+399 silly gunzTarPerm modified mode [ 'release.js', 436, 420 ]
+400 silly gunzTarPerm extractEntry filterLimit.js
+401 silly gunzTarPerm modified mode [ 'filterLimit.js', 436, 420 ]
+402 silly gunzTarPerm extractEntry History.md
+403 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+404 silly gunzTarPerm extractEntry .eslintrc.yml
+405 silly gunzTarPerm modified mode [ '.eslintrc.yml', 436, 420 ]
+406 silly gunzTarPerm extractEntry min/locales.js
+407 silly gunzTarPerm extractEntry min/locales.min.js
+408 silly gunzTarPerm extractEntry runtime.js
+409 silly gunzTarPerm modified mode [ 'runtime.js', 436, 420 ]
+410 silly gunzTarPerm extractEntry component.json
+411 silly gunzTarPerm modified mode [ 'component.json', 436, 420 ]
+412 silly gunzTarPerm extractEntry map.js
+413 silly gunzTarPerm modified mode [ 'map.js', 436, 420 ]
+414 silly gunzTarPerm extractEntry mapLimit.js
+415 silly gunzTarPerm modified mode [ 'mapLimit.js', 436, 420 ]
+416 silly gunzTarPerm extractEntry mapSeries.js
+417 silly gunzTarPerm modified mode [ 'mapSeries.js', 436, 420 ]
+418 silly gunzTarPerm extractEntry .eslintignore
+419 silly gunzTarPerm modified mode [ '.eslintignore', 436, 420 ]
+420 silly gunzTarPerm extractEntry examples/README.md
+421 silly gunzTarPerm modified mode [ 'examples/README.md', 436, 420 ]
+422 silly gunzTarPerm extractEntry bin/jade.js
+423 silly gunzTarPerm modified mode [ 'bin/jade.js', 509, 493 ]
+424 silly gunzTarPerm extractEntry block-code.html
+425 silly gunzTarPerm modified mode [ 'block-code.html', 436, 420 ]
+426 silly gunzTarPerm extractEntry History.md
+427 silly gunzTarPerm modified mode [ 'History.md', 436, 420 ]
+428 silly gunzTarPerm extractEntry lib/compiler.js
+429 silly gunzTarPerm modified mode [ 'lib/compiler.js', 436, 420 ]
+430 silly gunzTarPerm extractEntry lib/filters-client.js
+431 silly gunzTarPerm modified mode [ 'lib/filters-client.js', 436, 420 ]
+432 silly gunzTarPerm extractEntry min/moment-with-locales.js
+433 silly gunzTarPerm extractEntry examples/doc-methods.js
+434 silly gunzTarPerm modified mode [ 'examples/doc-methods.js', 436, 420 ]
+435 silly gunzTarPerm extractEntry examples/statics/person.js
+436 silly gunzTarPerm modified mode [ 'examples/statics/person.js', 436, 420 ]
+437 silly gunzTarPerm extractEntry lib/filters.js
+438 silly gunzTarPerm modified mode [ 'lib/filters.js', 436, 420 ]
+439 silly gunzTarPerm extractEntry mapValues.js
+440 silly gunzTarPerm modified mode [ 'mapValues.js', 436, 420 ]
+441 silly gunzTarPerm extractEntry filter.js
+442 silly gunzTarPerm modified mode [ 'filter.js', 436, 420 ]
+443 silly gunzTarPerm extractEntry lib/index.js
+444 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+445 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586/node_modules is being purged
+446 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586/node_modules
+447 silly gunzTarPerm extractEntry lib/doctypes.js
+448 silly gunzTarPerm modified mode [ 'lib/doctypes.js', 436, 420 ]
+449 silly gunzTarPerm extractEntry lib/lexer.js
+450 silly gunzTarPerm modified mode [ 'lib/lexer.js', 436, 420 ]
+451 silly gunzTarPerm extractEntry lib/runtime.js
+452 silly gunzTarPerm modified mode [ 'lib/runtime.js', 436, 420 ]
+453 silly gunzTarPerm extractEntry examples/statics/statics.js
+454 silly gunzTarPerm modified mode [ 'examples/statics/statics.js', 436, 420 ]
+455 silly gunzTarPerm extractEntry examples/express/README.md
+456 silly gunzTarPerm modified mode [ 'examples/express/README.md', 436, 420 ]
+457 silly gunzTarPerm extractEntry mapValuesLimit.js
+458 silly gunzTarPerm modified mode [ 'mapValuesLimit.js', 436, 420 ]
+459 silly gunzTarPerm extractEntry everySeries.js
+460 silly gunzTarPerm modified mode [ 'everySeries.js', 436, 420 ]
+461 silly gunzTarPerm extractEntry lib/parser.js
+462 silly gunzTarPerm modified mode [ 'lib/parser.js', 436, 420 ]
+463 silly gunzTarPerm extractEntry lib/utils.js
+464 silly gunzTarPerm modified mode [ 'lib/utils.js', 436, 420 ]
+465 silly gunzTarPerm extractEntry lib/inline-tags.js
+466 silly gunzTarPerm modified mode [ 'lib/inline-tags.js', 436, 420 ]
+467 silly gunzTarPerm extractEntry lib/nodes/attrs.js
+468 silly gunzTarPerm modified mode [ 'lib/nodes/attrs.js', 436, 420 ]
+469 silly gunzTarPerm extractEntry examples/express/connection-sharing/package.json
+470 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/package.json', 436, 420 ]
+471 silly gunzTarPerm extractEntry examples/express/connection-sharing/README.md
+472 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/README.md', 436, 420 ]
+473 silly gunzTarPerm extractEntry examples/express/connection-sharing/app.js
+474 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/app.js', 436, 420 ]
+475 silly gunzTarPerm extractEntry mapValuesSeries.js
+476 silly gunzTarPerm modified mode [ 'mapValuesSeries.js', 436, 420 ]
+477 silly gunzTarPerm extractEntry everyLimit.js
+478 silly gunzTarPerm modified mode [ 'everyLimit.js', 436, 420 ]
+479 silly gunzTarPerm extractEntry lib/nodes/code.js
+480 silly gunzTarPerm modified mode [ 'lib/nodes/code.js', 436, 420 ]
+481 silly gunzTarPerm extractEntry examples/express/connection-sharing/modelA.js
+482 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/modelA.js', 436, 420 ]
+483 silly gunzTarPerm extractEntry lib/nodes/comment.js
+484 silly gunzTarPerm modified mode [ 'lib/nodes/comment.js', 436, 420 ]
+485 silly gunzTarPerm extractEntry examples/express/connection-sharing/routes.js
+486 silly gunzTarPerm modified mode [ 'examples/express/connection-sharing/routes.js', 436, 420 ]
+487 silly gunzTarPerm extractEntry lib/nodes/doctype.js
+488 silly gunzTarPerm modified mode [ 'lib/nodes/doctype.js', 436, 420 ]
+489 silly gunzTarPerm extractEntry examples/geospatial/package.json
+490 silly gunzTarPerm modified mode [ 'examples/geospatial/package.json', 436, 420 ]
+491 silly gunzTarPerm extractEntry lib/nodes/each.js
+492 silly gunzTarPerm modified mode [ 'lib/nodes/each.js', 436, 420 ]
+493 silly gunzTarPerm extractEntry examples/geospatial/geoJSONSchema.js
+494 silly gunzTarPerm modified mode [ 'examples/geospatial/geoJSONSchema.js', 436, 420 ]
+495 silly gunzTarPerm extractEntry min/moment-with-locales.min.js
+496 silly gunzTarPerm extractEntry memoize.js
+497 silly gunzTarPerm modified mode [ 'memoize.js', 436, 420 ]
+498 silly gunzTarPerm extractEntry every.js
+499 silly gunzTarPerm modified mode [ 'every.js', 436, 420 ]
+500 silly gunzTarPerm extractEntry examples/geospatial/geoJSONexample.js
+501 silly gunzTarPerm modified mode [ 'examples/geospatial/geoJSONexample.js', 436, 420 ]
+502 silly gunzTarPerm extractEntry examples/geospatial/geospatial.js
+503 silly gunzTarPerm modified mode [ 'examples/geospatial/geospatial.js', 436, 420 ]
+504 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a/node_modules is being purged
+505 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a/node_modules
+506 silly gunzTarPerm extractEntry examples/geospatial/person.js
+507 silly gunzTarPerm modified mode [ 'examples/geospatial/person.js', 436, 420 ]
+508 silly gunzTarPerm extractEntry lib/nodes/case.js
+509 silly gunzTarPerm modified mode [ 'lib/nodes/case.js', 436, 420 ]
+510 silly gunzTarPerm extractEntry lib/nodes/index.js
+511 silly gunzTarPerm modified mode [ 'lib/nodes/index.js', 436, 420 ]
+512 silly gunzTarPerm extractEntry examples/globalschemas/gs_example.js
+513 silly gunzTarPerm modified mode [ 'examples/globalschemas/gs_example.js', 436, 420 ]
+514 silly gunzTarPerm extractEntry nextTick.js
+515 silly gunzTarPerm modified mode [ 'nextTick.js', 436, 420 ]
+516 silly gunzTarPerm extractEntry ensureAsync.js
+517 silly gunzTarPerm modified mode [ 'ensureAsync.js', 436, 420 ]
+518 silly gunzTarPerm extractEntry lib/nodes/literal.js
+519 silly gunzTarPerm modified mode [ 'lib/nodes/literal.js', 436, 420 ]
+520 silly gunzTarPerm extractEntry lib/nodes/mixin-block.js
+521 silly gunzTarPerm modified mode [ 'lib/nodes/mixin-block.js', 436, 420 ]
+522 silly gunzTarPerm extractEntry examples/globalschemas/person.js
+523 silly gunzTarPerm modified mode [ 'examples/globalschemas/person.js', 436, 420 ]
+524 silly gunzTarPerm extractEntry examples/lean/package.json
+525 silly gunzTarPerm modified mode [ 'examples/lean/package.json', 436, 420 ]
+526 silly gunzTarPerm extractEntry min/moment.min.js
+527 silly gunzTarPerm extractEntry eachOfLimit.js
+528 silly gunzTarPerm modified mode [ 'eachOfLimit.js', 436, 420 ]
+529 silly gunzTarPerm extractEntry unmemoize.js
+530 silly gunzTarPerm modified mode [ 'unmemoize.js', 436, 420 ]
+531 silly gunzTarPerm extractEntry locale/af.js
+532 silly gunzTarPerm extractEntry locale/ja.js
+533 silly gunzTarPerm extractEntry lib/nodes/mixin.js
+534 silly gunzTarPerm modified mode [ 'lib/nodes/mixin.js', 436, 420 ]
+535 silly gunzTarPerm extractEntry lib/nodes/node.js
+536 silly gunzTarPerm modified mode [ 'lib/nodes/node.js', 436, 420 ]
+537 silly gunzTarPerm extractEntry examples/lean/lean.js
+538 silly gunzTarPerm modified mode [ 'examples/lean/lean.js', 436, 420 ]
+539 silly gunzTarPerm extractEntry examples/lean/person.js
+540 silly gunzTarPerm modified mode [ 'examples/lean/person.js', 436, 420 ]
+541 silly gunzTarPerm extractEntry locale/jv.js
+542 silly gunzTarPerm extractEntry parallel.js
+543 silly gunzTarPerm modified mode [ 'parallel.js', 436, 420 ]
+544 silly gunzTarPerm extractEntry eachOf.js
+545 silly gunzTarPerm modified mode [ 'eachOf.js', 436, 420 ]
+546 silly gunzTarPerm extractEntry locale/ka.js
+547 silly gunzTarPerm extractEntry locale/kk.js
+548 silly gunzTarPerm extractEntry examples/aggregate/package.json
+549 silly gunzTarPerm modified mode [ 'examples/aggregate/package.json', 436, 420 ]
+550 silly gunzTarPerm extractEntry examples/aggregate/aggregate.js
+551 silly gunzTarPerm modified mode [ 'examples/aggregate/aggregate.js', 436, 420 ]
+552 silly gunzTarPerm extractEntry lib/nodes/block.js
+553 silly gunzTarPerm modified mode [ 'lib/nodes/block.js', 436, 420 ]
+554 silly gunzTarPerm extractEntry lib/nodes/tag.js
+555 silly gunzTarPerm modified mode [ 'lib/nodes/tag.js', 436, 420 ]
+556 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37/node_modules is being purged
+557 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37/node_modules
+558 silly gunzTarPerm extractEntry parallelLimit.js
+559 silly gunzTarPerm modified mode [ 'parallelLimit.js', 436, 420 ]
+560 silly gunzTarPerm extractEntry eachLimit.js
+561 silly gunzTarPerm modified mode [ 'eachLimit.js', 436, 420 ]
+562 silly gunzTarPerm extractEntry locale/it.js
+563 silly gunzTarPerm extractEntry locale/ko.js
+564 silly gunzTarPerm extractEntry locale/ky.js
+565 silly gunzTarPerm extractEntry examples/aggregate/person.js
+566 silly gunzTarPerm modified mode [ 'examples/aggregate/person.js', 436, 420 ]
+567 silly gunzTarPerm extractEntry examples/population/population-across-three-collections.js
+568 silly gunzTarPerm modified mode [ 'examples/population/population-across-three-collections.js',
+568 silly gunzTarPerm   436,
+568 silly gunzTarPerm   420 ]
+569 silly gunzTarPerm extractEntry lib/nodes/block-comment.js
+570 silly gunzTarPerm modified mode [ 'lib/nodes/block-comment.js', 436, 420 ]
+571 silly gunzTarPerm extractEntry lib/nodes/text.js
+572 silly gunzTarPerm modified mode [ 'lib/nodes/text.js', 436, 420 ]
+573 silly gunzTarPerm extractEntry locale/lb.js
+574 silly gunzTarPerm extractEntry priorityQueue.js
+575 silly gunzTarPerm modified mode [ 'priorityQueue.js', 436, 420 ]
+576 silly gunzTarPerm extractEntry each.js
+577 silly gunzTarPerm modified mode [ 'each.js', 436, 420 ]
+578 silly gunzTarPerm extractEntry locale/lo.js
+579 silly gunzTarPerm extractEntry locale/lt.js
+580 silly gunzTarPerm extractEntry lib/nodes/filter.js
+581 silly gunzTarPerm modified mode [ 'lib/nodes/filter.js', 436, 420 ]
+582 silly gunzTarPerm extractEntry .release.json
+583 silly gunzTarPerm modified mode [ '.release.json', 438, 420 ]
+584 silly gunzTarPerm extractEntry Readme_zh-cn.md
+585 silly gunzTarPerm modified mode [ 'Readme_zh-cn.md', 436, 420 ]
+586 silly gunzTarPerm extractEntry examples/population/population-basic.js
+587 silly gunzTarPerm modified mode [ 'examples/population/population-basic.js', 436, 420 ]
+588 silly gunzTarPerm extractEntry examples/population/population-of-existing-doc.js
+589 silly gunzTarPerm modified mode [ 'examples/population/population-of-existing-doc.js', 436, 420 ]
+590 silly gunzTarPerm extractEntry locale/is.js
+591 silly gunzTarPerm extractEntry locale/lv.js
+592 silly gunzTarPerm extractEntry queue.js
+593 silly gunzTarPerm modified mode [ 'queue.js', 436, 420 ]
+594 silly gunzTarPerm extractEntry during.js
+595 silly gunzTarPerm modified mode [ 'during.js', 436, 420 ]
+596 silly gunzTarPerm extractEntry locale/id.js
+597 silly gunzTarPerm extractEntry locale/me.js
+598 silly gunzTarPerm extractEntry locale/hy-am.js
+599 silly gunzTarPerm extractEntry examples/population/population-of-multiple-existing-docs.js
+600 silly gunzTarPerm modified mode [ 'examples/population/population-of-multiple-existing-docs.js',
+600 silly gunzTarPerm   436,
+600 silly gunzTarPerm   420 ]
+601 silly gunzTarPerm extractEntry examples/population/population-options.js
+602 silly gunzTarPerm modified mode [ 'examples/population/population-options.js', 436, 420 ]
+603 silly gunzTarPerm extractEntry locale/mi.js
+604 silly gunzTarPerm extractEntry race.js
+605 silly gunzTarPerm modified mode [ 'race.js', 436, 420 ]
+606 silly gunzTarPerm extractEntry doWhilst.js
+607 silly gunzTarPerm modified mode [ 'doWhilst.js', 436, 420 ]
+608 silly gunzTarPerm extractEntry locale/hu.js
+609 silly gunzTarPerm extractEntry examples/population/population-plain-objects.js
+610 silly gunzTarPerm modified mode [ 'examples/population/population-plain-objects.js', 436, 420 ]
+611 silly gunzTarPerm extractEntry examples/promises/package.json
+612 silly gunzTarPerm modified mode [ 'examples/promises/package.json', 436, 420 ]
+613 silly gunzTarPerm extractEntry reduce.js
+614 silly gunzTarPerm modified mode [ 'reduce.js', 436, 420 ]
+615 silly gunzTarPerm extractEntry doUntil.js
+616 silly gunzTarPerm modified mode [ 'doUntil.js', 436, 420 ]
+617 silly gunzTarPerm extractEntry locale/mk.js
+618 silly gunzTarPerm extractEntry locale/hr.js
+619 silly gunzTarPerm extractEntry locale/ml.js
+620 silly gunzTarPerm extractEntry locale/hi.js
+621 silly gunzTarPerm extractEntry examples/promises/person.js
+622 silly gunzTarPerm modified mode [ 'examples/promises/person.js', 436, 420 ]
+623 silly gunzTarPerm extractEntry examples/promises/promise.js
+624 silly gunzTarPerm modified mode [ 'examples/promises/promise.js', 436, 420 ]
+625 silly gunzTarPerm extractEntry locale/mr.js
+626 silly gunzTarPerm extractEntry locale/he.js
+627 silly gunzTarPerm extractEntry reduceRight.js
+628 silly gunzTarPerm modified mode [ 'reduceRight.js', 436, 420 ]
+629 silly gunzTarPerm extractEntry doDuring.js
+630 silly gunzTarPerm modified mode [ 'doDuring.js', 436, 420 ]
+631 silly gunzTarPerm extractEntry locale/ms-my.js
+632 silly gunzTarPerm extractEntry locale/gl.js
+633 silly gunzTarPerm extractEntry locale/ms.js
+634 silly gunzTarPerm extractEntry examples/querybuilder/package.json
+635 silly gunzTarPerm modified mode [ 'examples/querybuilder/package.json', 436, 420 ]
+636 silly gunzTarPerm extractEntry examples/querybuilder/person.js
+637 silly gunzTarPerm modified mode [ 'examples/querybuilder/person.js', 436, 420 ]
+638 silly gunzTarPerm extractEntry locale/gd.js
+639 silly gunzTarPerm extractEntry reflect.js
+640 silly gunzTarPerm modified mode [ 'reflect.js', 436, 420 ]
+641 silly gunzTarPerm extractEntry until.js
+642 silly gunzTarPerm modified mode [ 'until.js', 436, 420 ]
+643 silly gunzTarPerm extractEntry locale/my.js
+644 silly gunzTarPerm extractEntry locale/fy.js
+645 silly gunzTarPerm extractEntry locale/nb.js
+646 silly gunzTarPerm extractEntry examples/querybuilder/querybuilder.js
+647 silly gunzTarPerm modified mode [ 'examples/querybuilder/querybuilder.js', 436, 420 ]
+648 silly gunzTarPerm extractEntry examples/replicasets/package.json
+649 silly gunzTarPerm modified mode [ 'examples/replicasets/package.json', 436, 420 ]
+650 silly gunzTarPerm extractEntry locale/fr.js
+651 silly gunzTarPerm extractEntry reflectAll.js
+652 silly gunzTarPerm modified mode [ 'reflectAll.js', 436, 420 ]
+653 silly gunzTarPerm extractEntry dir.js
+654 silly gunzTarPerm modified mode [ 'dir.js', 436, 420 ]
+655 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c/node_modules is being purged
+656 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c/node_modules
+657 silly gunzTarPerm extractEntry locale/ne.js
+658 silly gunzTarPerm extractEntry locale/fr-ch.js
+659 silly gunzTarPerm extractEntry locale/nl-be.js
+660 silly gunzTarPerm extractEntry examples/replicasets/person.js
+661 silly gunzTarPerm modified mode [ 'examples/replicasets/person.js', 436, 420 ]
+662 silly gunzTarPerm extractEntry examples/replicasets/replica-sets.js
+663 silly gunzTarPerm modified mode [ 'examples/replicasets/replica-sets.js', 436, 420 ]
+664 silly gunzTarPerm extractEntry locale/fr-ca.js
+665 silly gunzTarPerm extractEntry locale/nl.js
+666 silly gunzTarPerm extractEntry reject.js
+667 silly gunzTarPerm modified mode [ 'reject.js', 436, 420 ]
+668 silly gunzTarPerm extractEntry detectSeries.js
+669 silly gunzTarPerm modified mode [ 'detectSeries.js', 436, 420 ]
+670 silly gunzTarPerm extractEntry locale/fo.js
+671 silly gunzTarPerm extractEntry locale/nn.js
+672 silly gunzTarPerm extractEntry examples/schema/schema.js
+673 silly gunzTarPerm modified mode [ 'examples/schema/schema.js', 436, 420 ]
+674 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/index.js
+675 silly gunzTarPerm modified mode [ 'examples/schema/storing-schemas-as-json/index.js', 436, 420 ]
+676 silly gunzTarPerm extractEntry locale/fi.js
+677 silly gunzTarPerm extractEntry locale/pa-in.js
+678 silly gunzTarPerm extractEntry rejectLimit.js
+679 silly gunzTarPerm modified mode [ 'rejectLimit.js', 436, 420 ]
+680 silly gunzTarPerm extractEntry detectLimit.js
+681 silly gunzTarPerm modified mode [ 'detectLimit.js', 436, 420 ]
+682 silly gunzTarPerm extractEntry locale/fa.js
+683 silly gunzTarPerm extractEntry examples/schema/storing-schemas-as-json/schema.json
+684 silly gunzTarPerm modified mode [ 'examples/schema/storing-schemas-as-json/schema.json',
+684 silly gunzTarPerm   436,
+684 silly gunzTarPerm   420 ]
+685 silly gunzTarPerm extractEntry examples/mapreduce/package.json
+686 silly gunzTarPerm modified mode [ 'examples/mapreduce/package.json', 436, 420 ]
+687 silly gunzTarPerm extractEntry locale/pl.js
+688 silly gunzTarPerm extractEntry locale/eu.js
+689 silly gunzTarPerm extractEntry locale/pt-br.js
+690 silly gunzTarPerm extractEntry rejectSeries.js
+691 silly gunzTarPerm modified mode [ 'rejectSeries.js', 436, 420 ]
+692 silly gunzTarPerm extractEntry detect.js
+693 silly gunzTarPerm modified mode [ 'detect.js', 436, 420 ]
+694 silly gunzTarPerm extractEntry examples/mapreduce/mapreduce.js
+695 silly gunzTarPerm modified mode [ 'examples/mapreduce/mapreduce.js', 436, 420 ]
+696 silly gunzTarPerm extractEntry examples/mapreduce/person.js
+697 silly gunzTarPerm modified mode [ 'examples/mapreduce/person.js', 436, 420 ]
+698 silly gunzTarPerm extractEntry locale/et.js
+699 silly gunzTarPerm extractEntry locale/pt.js
+700 silly gunzTarPerm extractEntry locale/es.js
+701 silly gunzTarPerm extractEntry locale/ro.js
+702 silly gunzTarPerm extractEntry retry.js
+703 silly gunzTarPerm modified mode [ 'retry.js', 436, 420 ]
+704 silly gunzTarPerm extractEntry constant.js
+705 silly gunzTarPerm modified mode [ 'constant.js', 436, 420 ]
+706 silly gunzTarPerm extractEntry locale/es-do.js
+707 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+708 silly gunzTarPerm modified mode [ '.github/ISSUE_TEMPLATE.md', 436, 420 ]
+709 silly gunzTarPerm extractEntry .github/PULL_REQUEST_TEMPLATE.md
+710 silly gunzTarPerm modified mode [ '.github/PULL_REQUEST_TEMPLATE.md', 436, 420 ]
+711 silly gunzTarPerm extractEntry locale/ru.js
+712 silly gunzTarPerm extractEntry locale/eo.js
+713 silly gunzTarPerm extractEntry locale/se.js
+714 silly gunzTarPerm extractEntry retryable.js
+715 silly gunzTarPerm modified mode [ 'retryable.js', 436, 420 ]
+716 silly gunzTarPerm extractEntry concatSeries.js
+717 silly gunzTarPerm modified mode [ 'concatSeries.js', 436, 420 ]
+718 silly gunzTarPerm extractEntry locale/en-nz.js
+719 silly gunzTarPerm extractEntry lib/ES6Promise.js
+720 silly gunzTarPerm modified mode [ 'lib/ES6Promise.js', 436, 420 ]
+721 silly gunzTarPerm extractEntry lib/document_provider.js
+722 silly gunzTarPerm modified mode [ 'lib/document_provider.js', 436, 420 ]
+723 silly gunzTarPerm extractEntry locale/si.js
+724 silly gunzTarPerm extractEntry locale/en-ie.js
+725 silly gunzTarPerm extractEntry locale/sk.js
+726 silly gunzTarPerm extractEntry seq.js
+727 silly gunzTarPerm modified mode [ 'seq.js', 436, 420 ]
+728 silly gunzTarPerm extractEntry concat.js
+729 silly gunzTarPerm modified mode [ 'concat.js', 436, 420 ]
+730 silly gunzTarPerm extractEntry locale/en-gb.js
+731 silly gunzTarPerm extractEntry locale/sl.js
+732 silly gunzTarPerm extractEntry lib/document_provider.web.js
+733 silly gunzTarPerm modified mode [ 'lib/document_provider.web.js', 436, 420 ]
+734 silly gunzTarPerm extractEntry lib/utils.js
+735 silly gunzTarPerm modified mode [ 'lib/utils.js', 436, 420 ]
+736 silly gunzTarPerm extractEntry locale/en-ca.js
+737 silly gunzTarPerm extractEntry locale/sq.js
+738 silly gunzTarPerm extractEntry locale/en-au.js
+739 silly gunzTarPerm extractEntry series.js
+740 silly gunzTarPerm modified mode [ 'series.js', 436, 420 ]
+741 silly gunzTarPerm extractEntry compose.js
+742 silly gunzTarPerm modified mode [ 'compose.js', 436, 420 ]
+743 silly gunzTarPerm extractEntry locale/sr-cyrl.js
+744 silly gunzTarPerm extractEntry lib/statemachine.js
+745 silly gunzTarPerm modified mode [ 'lib/statemachine.js', 436, 420 ]
+746 silly gunzTarPerm extractEntry lib/document.js
+747 silly gunzTarPerm modified mode [ 'lib/document.js', 436, 420 ]
+748 silly gunzTarPerm extractEntry setImmediate.js
+749 silly gunzTarPerm modified mode [ 'setImmediate.js', 436, 420 ]
+750 silly gunzTarPerm extractEntry cargo.js
+751 silly gunzTarPerm modified mode [ 'cargo.js', 436, 420 ]
+752 silly gunzTarPerm extractEntry locale/el.js
+753 silly gunzTarPerm extractEntry locale/sr.js
+754 silly gunzTarPerm extractEntry locale/dv.js
+755 silly gunzTarPerm extractEntry locale/ss.js
+756 silly gunzTarPerm extractEntry lib/index.js
+757 silly gunzTarPerm modified mode [ 'lib/index.js', 436, 420 ]
+758 silly gunzTarPerm extractEntry lib/aggregate.js
+759 silly gunzTarPerm modified mode [ 'lib/aggregate.js', 436, 420 ]
+760 silly gunzTarPerm extractEntry locale/de.js
+761 silly gunzTarPerm extractEntry locale/sv.js
+762 silly gunzTarPerm extractEntry some.js
+763 silly gunzTarPerm modified mode [ 'some.js', 436, 420 ]
+764 silly gunzTarPerm extractEntry waterfall.js
+765 silly gunzTarPerm modified mode [ 'waterfall.js', 436, 420 ]
+766 silly gunzTarPerm extractEntry lib/model.js
+767 silly gunzTarPerm modified mode [ 'lib/model.js', 436, 420 ]
+768 silly gunzTarPerm extractEntry lib/promise.js
+769 silly gunzTarPerm modified mode [ 'lib/promise.js', 436, 420 ]
+770 silly gunzTarPerm extractEntry locale/de-at.js
+771 silly gunzTarPerm extractEntry locale/sw.js
+772 silly gunzTarPerm extractEntry someLimit.js
+773 silly gunzTarPerm modified mode [ 'someLimit.js', 436, 420 ]
+774 silly gunzTarPerm extractEntry autoInject.js
+775 silly gunzTarPerm modified mode [ 'autoInject.js', 436, 420 ]
+776 silly gunzTarPerm extractEntry lib/promise_provider.js
+777 silly gunzTarPerm modified mode [ 'lib/promise_provider.js', 436, 420 ]
+778 silly gunzTarPerm extractEntry lib/connectionstate.js
+779 silly gunzTarPerm modified mode [ 'lib/connectionstate.js', 436, 420 ]
+780 silly gunzTarPerm extractEntry locale/da.js
+781 silly gunzTarPerm extractEntry locale/ta.js
+782 silly gunzTarPerm extractEntry someSeries.js
+783 silly gunzTarPerm modified mode [ 'someSeries.js', 436, 420 ]
+784 silly gunzTarPerm extractEntry auto.js
+785 silly gunzTarPerm modified mode [ 'auto.js', 436, 420 ]
+786 silly gunzTarPerm extractEntry lib/query.js
+787 silly gunzTarPerm modified mode [ 'lib/query.js', 436, 420 ]
+788 silly gunzTarPerm extractEntry lib/connection.js
+789 silly gunzTarPerm modified mode [ 'lib/connection.js', 436, 420 ]
+790 silly gunzTarPerm extractEntry locale/cy.js
+791 silly gunzTarPerm extractEntry locale/te.js
+792 silly gunzTarPerm extractEntry sortBy.js
+793 silly gunzTarPerm modified mode [ 'sortBy.js', 436, 420 ]
+794 silly gunzTarPerm extractEntry asyncify.js
+795 silly gunzTarPerm modified mode [ 'asyncify.js', 436, 420 ]
+796 silly gunzTarPerm extractEntry lib/querycursor.js
+797 silly gunzTarPerm modified mode [ 'lib/querycursor.js', 436, 420 ]
+798 silly gunzTarPerm extractEntry locale/cv.js
+799 silly gunzTarPerm extractEntry locale/tet.js
+800 silly gunzTarPerm extractEntry timeout.js
+801 silly gunzTarPerm modified mode [ 'timeout.js', 436, 420 ]
+802 silly gunzTarPerm extractEntry applyEachSeries.js
+803 silly gunzTarPerm modified mode [ 'applyEachSeries.js', 436, 420 ]
+804 silly gunzTarPerm extractEntry lib/collection.js
+805 silly gunzTarPerm modified mode [ 'lib/collection.js', 436, 420 ]
+806 silly gunzTarPerm extractEntry lib/queryhelpers.js
+807 silly gunzTarPerm modified mode [ 'lib/queryhelpers.js', 436, 420 ]
+808 silly gunzTarPerm extractEntry locale/cs.js
+809 silly gunzTarPerm extractEntry locale/th.js
+810 silly gunzTarPerm extractEntry times.js
+811 silly gunzTarPerm modified mode [ 'times.js', 436, 420 ]
+812 silly gunzTarPerm extractEntry applyEach.js
+813 silly gunzTarPerm modified mode [ 'applyEach.js', 436, 420 ]
+814 silly gunzTarPerm extractEntry lib/cast.js
+815 silly gunzTarPerm modified mode [ 'lib/cast.js', 436, 420 ]
+816 silly gunzTarPerm extractEntry lib/querystream.js
+817 silly gunzTarPerm modified mode [ 'lib/querystream.js', 436, 420 ]
+818 silly gunzTarPerm extractEntry locale/ca.js
+819 silly gunzTarPerm extractEntry locale/tl-ph.js
+820 silly gunzTarPerm extractEntry lib/browserDocument.js
+821 silly gunzTarPerm modified mode [ 'lib/browserDocument.js', 436, 420 ]
+822 silly gunzTarPerm extractEntry lib/schematype.js
+823 silly gunzTarPerm modified mode [ 'lib/schematype.js', 436, 420 ]
+824 silly gunzTarPerm extractEntry timesLimit.js
+825 silly gunzTarPerm modified mode [ 'timesLimit.js', 436, 420 ]
+826 silly gunzTarPerm extractEntry apply.js
+827 silly gunzTarPerm modified mode [ 'apply.js', 436, 420 ]
+828 silly gunzTarPerm extractEntry locale/bs.js
+829 silly gunzTarPerm extractEntry locale/tlh.js
+830 silly gunzTarPerm extractEntry whilst.js
+831 silly gunzTarPerm modified mode [ 'whilst.js', 436, 420 ]
+832 silly gunzTarPerm extractEntry timesSeries.js
+833 silly gunzTarPerm modified mode [ 'timesSeries.js', 436, 420 ]
+834 silly gunzTarPerm extractEntry lib/browser.js
+835 silly gunzTarPerm modified mode [ 'lib/browser.js', 436, 420 ]
+836 silly gunzTarPerm extractEntry lib/schema.js
+837 silly gunzTarPerm modified mode [ 'lib/schema.js', 436, 420 ]
+838 silly gunzTarPerm extractEntry locale/br.js
+839 silly gunzTarPerm extractEntry locale/tr.js
+840 silly gunzTarPerm extractEntry transform.js
+841 silly gunzTarPerm modified mode [ 'transform.js', 436, 420 ]
+842 silly gunzTarPerm extractEntry index.js
+843 silly gunzTarPerm modified mode [ 'index.js', 436, 420 ]
+844 silly gunzTarPerm extractEntry lib/error.js
+845 silly gunzTarPerm modified mode [ 'lib/error.js', 436, 420 ]
+846 silly gunzTarPerm extractEntry lib/virtualtype.js
+847 silly gunzTarPerm modified mode [ 'lib/virtualtype.js', 436, 420 ]
+848 silly gunzTarPerm extractEntry locale/bo.js
+849 silly gunzTarPerm extractEntry locale/tzl.js
+850 silly gunzTarPerm extractEntry log.js
+851 silly gunzTarPerm modified mode [ 'log.js', 436, 420 ]
+852 silly gunzTarPerm extractEntry internal/DoublyLinkedList.js
+853 silly gunzTarPerm modified mode [ 'internal/DoublyLinkedList.js', 436, 420 ]
+854 silly gunzTarPerm extractEntry lib/internal.js
+855 silly gunzTarPerm modified mode [ 'lib/internal.js', 436, 420 ]
+856 silly gunzTarPerm extractEntry lib/schema/array.js
+857 silly gunzTarPerm modified mode [ 'lib/schema/array.js', 436, 420 ]
+858 silly gunzTarPerm extractEntry locale/bn.js
+859 silly gunzTarPerm extractEntry locale/tzm-latn.js
+860 silly gunzTarPerm extractEntry internal/doSeries.js
+861 silly gunzTarPerm modified mode [ 'internal/doSeries.js', 436, 420 ]
+862 silly gunzTarPerm extractEntry internal/eachOfLimit.js
+863 silly gunzTarPerm modified mode [ 'internal/eachOfLimit.js', 436, 420 ]
+864 silly gunzTarPerm extractEntry lib/schema/buffer.js
+865 silly gunzTarPerm modified mode [ 'lib/schema/buffer.js', 436, 420 ]
+866 silly gunzTarPerm extractEntry lib/schema/date.js
+867 silly gunzTarPerm modified mode [ 'lib/schema/date.js', 436, 420 ]
+868 silly gunzTarPerm extractEntry locale/bg.js
+869 silly gunzTarPerm extractEntry locale/tzm.js
+870 silly gunzTarPerm extractEntry internal/filter.js
+871 silly gunzTarPerm modified mode [ 'internal/filter.js', 436, 420 ]
+872 silly gunzTarPerm extractEntry internal/findGetResult.js
+873 silly gunzTarPerm modified mode [ 'internal/findGetResult.js', 436, 420 ]
+874 silly gunzTarPerm extractEntry lib/schema/documentarray.js
+875 silly gunzTarPerm modified mode [ 'lib/schema/documentarray.js', 436, 420 ]
+876 silly gunzTarPerm extractEntry lib/schema/embedded.js
+877 silly gunzTarPerm modified mode [ 'lib/schema/embedded.js', 436, 420 ]
+878 silly gunzTarPerm extractEntry locale/be.js
+879 silly gunzTarPerm extractEntry locale/uk.js
+880 silly gunzTarPerm extractEntry internal/doParallelLimit.js
+881 silly gunzTarPerm modified mode [ 'internal/doParallelLimit.js', 436, 420 ]
+882 silly gunzTarPerm extractEntry internal/initialParams.js
+883 silly gunzTarPerm modified mode [ 'internal/initialParams.js', 436, 420 ]
+884 silly gunzTarPerm extractEntry lib/schema/boolean.js
+885 silly gunzTarPerm modified mode [ 'lib/schema/boolean.js', 436, 420 ]
+886 silly gunzTarPerm extractEntry lib/schema/mixed.js
+887 silly gunzTarPerm modified mode [ 'lib/schema/mixed.js', 436, 420 ]
+888 silly gunzTarPerm extractEntry locale/az.js
+889 silly gunzTarPerm extractEntry locale/uz.js
+890 silly gunzTarPerm extractEntry internal/iterator.js
+891 silly gunzTarPerm modified mode [ 'internal/iterator.js', 436, 420 ]
+892 silly gunzTarPerm extractEntry internal/map.js
+893 silly gunzTarPerm modified mode [ 'internal/map.js', 436, 420 ]
+894 silly gunzTarPerm extractEntry lib/schema/number.js
+895 silly gunzTarPerm modified mode [ 'lib/schema/number.js', 436, 420 ]
+896 silly gunzTarPerm extractEntry lib/schema/objectid.js
+897 silly gunzTarPerm modified mode [ 'lib/schema/objectid.js', 436, 420 ]
+898 silly gunzTarPerm extractEntry locale/ar.js
+899 silly gunzTarPerm extractEntry locale/vi.js
+900 silly gunzTarPerm extractEntry internal/notId.js
+901 silly gunzTarPerm modified mode [ 'internal/notId.js', 436, 420 ]
+902 silly gunzTarPerm extractEntry internal/once.js
+903 silly gunzTarPerm modified mode [ 'internal/once.js', 436, 420 ]
+904 silly gunzTarPerm extractEntry lib/schema/string.js
+905 silly gunzTarPerm modified mode [ 'lib/schema/string.js', 436, 420 ]
+906 silly gunzTarPerm extractEntry lib/schema/index.js
+907 silly gunzTarPerm modified mode [ 'lib/schema/index.js', 436, 420 ]
+908 silly gunzTarPerm extractEntry locale/ar-tn.js
+909 silly gunzTarPerm extractEntry locale/x-pseudo.js
+910 silly gunzTarPerm extractEntry internal/doParallel.js
+911 silly gunzTarPerm modified mode [ 'internal/doParallel.js', 436, 420 ]
+912 silly gunzTarPerm extractEntry internal/onlyOnce.js
+913 silly gunzTarPerm modified mode [ 'internal/onlyOnce.js', 436, 420 ]
+914 silly gunzTarPerm extractEntry lib/schema/operators/bitwise.js
+915 silly gunzTarPerm modified mode [ 'lib/schema/operators/bitwise.js', 436, 420 ]
+916 silly gunzTarPerm extractEntry lib/schema/operators/geospatial.js
+917 silly gunzTarPerm modified mode [ 'lib/schema/operators/geospatial.js', 436, 420 ]
+918 silly gunzTarPerm extractEntry locale/ar-sa.js
+919 silly gunzTarPerm extractEntry locale/yo.js
+920 silly gunzTarPerm extractEntry internal/doLimit.js
+921 silly gunzTarPerm modified mode [ 'internal/doLimit.js', 436, 420 ]
+922 silly gunzTarPerm extractEntry internal/parallel.js
+923 silly gunzTarPerm modified mode [ 'internal/parallel.js', 436, 420 ]
+924 silly gunzTarPerm extractEntry lib/schema/operators/helpers.js
+925 silly gunzTarPerm modified mode [ 'lib/schema/operators/helpers.js', 436, 420 ]
+926 silly gunzTarPerm extractEntry lib/services/common.js
+927 silly gunzTarPerm modified mode [ 'lib/services/common.js', 436, 420 ]
+928 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033/node_modules is being purged
+929 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033/node_modules
+930 silly gunzTarPerm extractEntry locale/ar-ma.js
+931 silly gunzTarPerm extractEntry locale/zh-cn.js
+932 silly gunzTarPerm extractEntry internal/createTester.js
+933 silly gunzTarPerm modified mode [ 'internal/createTester.js', 436, 420 ]
+934 silly gunzTarPerm extractEntry internal/queue.js
+935 silly gunzTarPerm modified mode [ 'internal/queue.js', 436, 420 ]
+936 silly gunzTarPerm extractEntry lib/services/setDefaultsOnInsert.js
+937 silly gunzTarPerm modified mode [ 'lib/services/setDefaultsOnInsert.js', 436, 420 ]
+938 silly gunzTarPerm extractEntry lib/services/updateValidators.js
+939 silly gunzTarPerm modified mode [ 'lib/services/updateValidators.js', 436, 420 ]
+940 silly gunzTarPerm extractEntry locale/ar-ly.js
+941 silly gunzTarPerm extractEntry locale/zh-hk.js
+942 silly gunzTarPerm extractEntry lib/error/browserMissingSchema.js
+943 silly gunzTarPerm modified mode [ 'lib/error/browserMissingSchema.js', 436, 420 ]
+944 silly gunzTarPerm extractEntry lib/error/disconnected.js
+945 silly gunzTarPerm modified mode [ 'lib/error/disconnected.js', 436, 420 ]
+946 silly gunzTarPerm extractEntry internal/consoleFunc.js
+947 silly gunzTarPerm modified mode [ 'internal/consoleFunc.js', 436, 420 ]
+948 silly gunzTarPerm extractEntry internal/reject.js
+949 silly gunzTarPerm modified mode [ 'internal/reject.js', 436, 420 ]
+950 silly gunzTarPerm extractEntry locale/ar-dz.js
+951 silly gunzTarPerm extractEntry locale/zh-tw.js
+952 silly gunzTarPerm extractEntry internal/concat.js
+953 silly gunzTarPerm modified mode [ 'internal/concat.js', 436, 420 ]
+954 silly gunzTarPerm extractEntry internal/rest.js
+955 silly gunzTarPerm modified mode [ 'internal/rest.js', 436, 420 ]
+956 silly gunzTarPerm extractEntry lib/error/divergentArray.js
+957 silly gunzTarPerm modified mode [ 'lib/error/divergentArray.js', 436, 420 ]
+958 silly gunzTarPerm extractEntry lib/error/messages.js
+959 silly gunzTarPerm modified mode [ 'lib/error/messages.js', 436, 420 ]
+960 silly gunzTarPerm extractEntry locale/km.js
+961 silly gunzTarPerm extractEntry CHANGELOG.md
+962 silly gunzTarPerm extractEntry lib/error/missingSchema.js
+963 silly gunzTarPerm modified mode [ 'lib/error/missingSchema.js', 436, 420 ]
+964 silly gunzTarPerm extractEntry lib/error/cast.js
+965 silly gunzTarPerm modified mode [ 'lib/error/cast.js', 436, 420 ]
+966 silly gunzTarPerm extractEntry internal/breakLoop.js
+967 silly gunzTarPerm modified mode [ 'internal/breakLoop.js', 436, 420 ]
+968 silly gunzTarPerm extractEntry internal/setImmediate.js
+969 silly gunzTarPerm modified mode [ 'internal/setImmediate.js', 436, 420 ]
+970 silly gunzTarPerm extractEntry lib/error/overwriteModel.js
+971 silly gunzTarPerm modified mode [ 'lib/error/overwriteModel.js', 436, 420 ]
+972 silly gunzTarPerm extractEntry lib/error/strict.js
+973 silly gunzTarPerm modified mode [ 'lib/error/strict.js', 436, 420 ]
+974 silly gunzTarPerm extractEntry moment.d.ts
+975 silly gunzTarPerm extractEntry src/moment.js
+976 silly gunzTarPerm extractEntry internal/applyEach.js
+977 silly gunzTarPerm modified mode [ 'internal/applyEach.js', 436, 420 ]
+978 silly gunzTarPerm extractEntry internal/withoutIndex.js
+979 silly gunzTarPerm modified mode [ 'internal/withoutIndex.js', 436, 420 ]
+980 silly gunzTarPerm extractEntry lib/error/validation.js
+981 silly gunzTarPerm modified mode [ 'lib/error/validation.js', 436, 420 ]
+982 silly gunzTarPerm extractEntry lib/error/validator.js
+983 silly gunzTarPerm modified mode [ 'lib/error/validator.js', 436, 420 ]
+984 silly gunzTarPerm extractEntry src/lib/create/check-overflow.js
+985 silly gunzTarPerm extractEntry src/lib/create/from-anything.js
+986 silly gunzTarPerm extractEntry internal/getIterator.js
+987 silly gunzTarPerm modified mode [ 'internal/getIterator.js', 436, 420 ]
+988 silly gunzTarPerm extractEntry dist/async.js
+989 silly gunzTarPerm modified mode [ 'dist/async.js', 436, 420 ]
+990 silly gunzTarPerm extractEntry src/lib/create/from-array.js
+991 silly gunzTarPerm extractEntry dist/async.min.js
+992 silly gunzTarPerm modified mode [ 'dist/async.min.js', 436, 420 ]
+993 silly gunzTarPerm extractEntry src/lib/create/from-object.js
+994 silly gunzTarPerm extractEntry lib/error/version.js
+995 silly gunzTarPerm modified mode [ 'lib/error/version.js', 436, 420 ]
+996 silly gunzTarPerm extractEntry lib/error/objectExpected.js
+997 silly gunzTarPerm modified mode [ 'lib/error/objectExpected.js', 436, 420 ]
+998 silly gunzTarPerm extractEntry lib/types/array.js
+999 silly gunzTarPerm modified mode [ 'lib/types/array.js', 436, 420 ]
+1000 silly gunzTarPerm extractEntry lib/types/buffer.js
+1001 silly gunzTarPerm modified mode [ 'lib/types/buffer.js', 436, 420 ]
+1002 silly gunzTarPerm extractEntry src/lib/create/from-string-and-array.js
+1003 silly gunzTarPerm extractEntry src/lib/create/date-from-array.js
+1004 silly gunzTarPerm extractEntry bower.json
+1005 silly gunzTarPerm modified mode [ 'bower.json', 436, 420 ]
+1006 silly gunzTarPerm extractEntry CHANGELOG.md
+1007 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+1008 silly gunzTarPerm extractEntry src/lib/create/from-string.js
+1009 silly gunzTarPerm extractEntry src/lib/create/local.js
+1010 silly gunzTarPerm extractEntry lib/types/documentarray.js
+1011 silly gunzTarPerm modified mode [ 'lib/types/documentarray.js', 436, 420 ]
+1012 silly gunzTarPerm extractEntry lib/types/embedded.js
+1013 silly gunzTarPerm modified mode [ 'lib/types/embedded.js', 436, 420 ]
+1014 silly gunzTarPerm extractEntry src/lib/create/parsing-flags.js
+1015 silly gunzTarPerm extractEntry src/lib/create/utc.js
+1016 silly gunzTarPerm extractEntry lib/types/index.js
+1017 silly gunzTarPerm modified mode [ 'lib/types/index.js', 436, 420 ]
+1018 silly gunzTarPerm extractEntry lib/types/objectid.js
+1019 silly gunzTarPerm modified mode [ 'lib/types/objectid.js', 436, 420 ]
+1020 silly gunzTarPerm extractEntry lib/types/subdocument.js
+1021 silly gunzTarPerm modified mode [ 'lib/types/subdocument.js', 436, 420 ]
+1022 silly gunzTarPerm extractEntry lib/drivers/index.js
+1023 silly gunzTarPerm modified mode [ 'lib/drivers/index.js', 436, 420 ]
+1024 silly gunzTarPerm extractEntry src/lib/create/valid.js
+1025 silly gunzTarPerm extractEntry src/lib/create/from-string-and-format.js
+1026 silly gunzTarPerm extractEntry lib/drivers/index.web.js
+1027 silly gunzTarPerm modified mode [ 'lib/drivers/index.web.js', 436, 420 ]
+1028 silly gunzTarPerm extractEntry lib/drivers/SPEC.md
+1029 silly gunzTarPerm modified mode [ 'lib/drivers/SPEC.md', 436, 420 ]
+1030 silly gunzTarPerm extractEntry src/lib/duration/abs.js
+1031 silly gunzTarPerm extractEntry src/lib/duration/as.js
+1032 silly gunzTarPerm extractEntry lib/drivers/browser/ReadPreference.js
+1033 silly gunzTarPerm modified mode [ 'lib/drivers/browser/ReadPreference.js', 436, 420 ]
+1034 silly gunzTarPerm extractEntry lib/drivers/browser/binary.js
+1035 silly gunzTarPerm modified mode [ 'lib/drivers/browser/binary.js', 436, 420 ]
+1036 silly gunzTarPerm extractEntry src/lib/duration/bubble.js
+1037 silly gunzTarPerm extractEntry src/lib/duration/constructor.js
+1038 silly gunzTarPerm extractEntry lib/drivers/browser/index.js
+1039 silly gunzTarPerm modified mode [ 'lib/drivers/browser/index.js', 436, 420 ]
+1040 silly gunzTarPerm extractEntry lib/drivers/browser/objectid.js
+1041 silly gunzTarPerm modified mode [ 'lib/drivers/browser/objectid.js', 436, 420 ]
+1042 silly gunzTarPerm extractEntry src/lib/duration/add-subtract.js
+1043 silly gunzTarPerm extractEntry src/lib/duration/duration.js
+1044 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/ReadPreference.js
+1045 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/ReadPreference.js', 436, 420 ]
+1046 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/binary.js
+1047 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/binary.js', 436, 420 ]
+1048 silly gunzTarPerm extractEntry src/lib/duration/get.js
+1049 silly gunzTarPerm extractEntry src/lib/duration/humanize.js
+1050 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/collection.js
+1051 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/collection.js', 436, 420 ]
+1052 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/connection.js
+1053 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/connection.js', 436, 420 ]
+1054 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/index.js
+1055 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/index.js', 436, 420 ]
+1056 silly gunzTarPerm extractEntry src/lib/duration/iso-string.js
+1057 silly gunzTarPerm extractEntry src/lib/duration/prototype.js
+1058 silly gunzTarPerm extractEntry lib/drivers/node-mongodb-native/objectid.js
+1059 silly gunzTarPerm modified mode [ 'lib/drivers/node-mongodb-native/objectid.js', 436, 420 ]
+1060 silly gunzTarPerm extractEntry .travis.yml
+1061 silly gunzTarPerm modified mode [ '.travis.yml', 436, 420 ]
+1062 silly gunzTarPerm extractEntry src/lib/duration/create.js
+1063 silly gunzTarPerm extractEntry src/lib/format/format.js
+1064 silly gunzTarPerm extractEntry release-items.md
+1065 silly gunzTarPerm modified mode [ 'release-items.md', 436, 420 ]
+1066 silly gunzTarPerm extractEntry src/lib/locale/base-config.js
+1067 silly gunzTarPerm extractEntry src/lib/locale/en.js
+1068 silly gunzTarPerm extractEntry src/lib/locale/formats.js
+1069 silly gunzTarPerm extractEntry src/lib/locale/invalid.js
+1070 silly gunzTarPerm extractEntry src/lib/locale/lists.js
+1071 silly gunzTarPerm extractEntry src/lib/locale/constructor.js
+1072 silly gunzTarPerm extractEntry src/lib/locale/locales.js
+1073 silly gunzTarPerm extractEntry src/lib/locale/ordinal.js
+1074 silly gunzTarPerm extractEntry src/lib/locale/pre-post-format.js
+1075 silly gunzTarPerm extractEntry src/lib/locale/prototype.js
+1076 silly gunzTarPerm extractEntry src/lib/locale/relative.js
+1077 silly gunzTarPerm extractEntry src/lib/locale/calendar.js
+1078 silly gunzTarPerm extractEntry src/lib/locale/set.js
+1079 silly gunzTarPerm extractEntry src/lib/locale/locale.js
+1080 silly gunzTarPerm extractEntry src/lib/moment/add-subtract.js
+1081 silly gunzTarPerm extractEntry src/lib/moment/diff.js
+1082 silly gunzTarPerm extractEntry src/lib/moment/format.js
+1083 silly gunzTarPerm extractEntry src/lib/moment/from.js
+1084 silly gunzTarPerm extractEntry src/lib/moment/creation-data.js
+1085 silly gunzTarPerm extractEntry src/lib/moment/locale.js
+1086 silly gunzTarPerm extractEntry src/lib/moment/min-max.js
+1087 silly gunzTarPerm extractEntry src/lib/moment/moment.js
+1088 silly gunzTarPerm extractEntry src/lib/moment/now.js
+1089 silly gunzTarPerm extractEntry src/lib/moment/prototype.js
+1090 silly gunzTarPerm extractEntry src/lib/moment/constructor.js
+1091 silly gunzTarPerm extractEntry src/lib/moment/start-end-of.js
+1092 silly gunzTarPerm extractEntry src/lib/moment/compare.js
+1093 silly gunzTarPerm extractEntry src/lib/moment/to-type.js
+1094 silly gunzTarPerm extractEntry src/lib/moment/clone.js
+1095 silly gunzTarPerm extractEntry src/lib/moment/to.js
+1096 silly gunzTarPerm extractEntry src/lib/moment/calendar.js
+1097 silly gunzTarPerm extractEntry src/lib/moment/valid.js
+1098 silly gunzTarPerm extractEntry src/lib/moment/get-set.js
+1099 silly gunzTarPerm extractEntry src/lib/parse/regex.js
+1100 silly gunzTarPerm extractEntry src/lib/parse/token.js
+1101 silly gunzTarPerm extractEntry src/lib/units/aliases.js
+1102 silly gunzTarPerm extractEntry src/lib/units/millisecond.js
+1103 silly gunzTarPerm extractEntry src/lib/units/minute.js
+1104 silly gunzTarPerm extractEntry src/lib/units/month.js
+1105 silly gunzTarPerm extractEntry src/lib/units/offset.js
+1106 silly gunzTarPerm extractEntry src/lib/units/hour.js
+1107 silly gunzTarPerm extractEntry src/lib/units/quarter.js
+1108 silly gunzTarPerm extractEntry src/lib/units/second.js
+1109 silly gunzTarPerm extractEntry src/lib/units/timestamp.js
+1110 silly gunzTarPerm extractEntry src/lib/units/timezone.js
+1111 silly gunzTarPerm extractEntry src/lib/units/units.js
+1112 silly gunzTarPerm extractEntry src/lib/units/day-of-year.js
+1113 silly gunzTarPerm extractEntry src/lib/units/week-calendar-utils.js
+1114 silly gunzTarPerm extractEntry src/lib/units/day-of-week.js
+1115 silly gunzTarPerm extractEntry src/lib/units/week-year.js
+1116 silly gunzTarPerm extractEntry src/lib/units/day-of-month.js
+1117 silly gunzTarPerm extractEntry src/lib/units/week.js
+1118 silly gunzTarPerm extractEntry src/lib/units/constants.js
+1119 silly gunzTarPerm extractEntry src/lib/units/year.js
+1120 silly gunzTarPerm extractEntry src/lib/units/priorities.js
+1121 silly gunzTarPerm extractEntry src/lib/utils/abs-ceil.js
+1122 silly gunzTarPerm extractEntry src/lib/utils/has-own-prop.js
+1123 silly gunzTarPerm extractEntry src/lib/utils/hooks.js
+1124 silly gunzTarPerm extractEntry src/lib/utils/index-of.js
+1125 silly gunzTarPerm extractEntry src/lib/utils/is-array.js
+1126 silly gunzTarPerm extractEntry src/lib/utils/extend.js
+1127 silly gunzTarPerm extractEntry src/lib/utils/is-function.js
+1128 silly gunzTarPerm extractEntry src/lib/utils/is-number.js
+1129 silly gunzTarPerm extractEntry src/lib/utils/is-object-empty.js
+1130 silly gunzTarPerm extractEntry src/lib/utils/is-object.js
+1131 silly gunzTarPerm extractEntry src/lib/utils/is-undefined.js
+1132 silly gunzTarPerm extractEntry src/lib/utils/deprecate.js
+1133 silly gunzTarPerm extractEntry src/lib/utils/keys.js
+1134 silly gunzTarPerm extractEntry src/lib/utils/defaults.js
+1135 silly gunzTarPerm extractEntry src/lib/utils/map.js
+1136 silly gunzTarPerm extractEntry src/lib/utils/compare-arrays.js
+1137 silly gunzTarPerm extractEntry src/lib/utils/some.js
+1138 silly gunzTarPerm extractEntry src/lib/utils/abs-round.js
+1139 silly gunzTarPerm extractEntry src/lib/utils/to-int.js
+1140 silly gunzTarPerm extractEntry src/lib/utils/abs-floor.js
+1141 silly gunzTarPerm extractEntry src/lib/utils/zero-fill.js
+1142 silly gunzTarPerm extractEntry src/lib/utils/is-date.js
+1143 silly gunzTarPerm extractEntry src/locale/af.js
+1144 silly gunzTarPerm extractEntry src/locale/ja.js
+1145 silly gunzTarPerm extractEntry src/locale/jv.js
+1146 silly gunzTarPerm extractEntry src/locale/ka.js
+1147 silly gunzTarPerm extractEntry src/locale/kk.js
+1148 silly gunzTarPerm extractEntry src/locale/it.js
+1149 silly gunzTarPerm extractEntry src/locale/ko.js
+1150 silly gunzTarPerm extractEntry src/locale/ky.js
+1151 silly gunzTarPerm extractEntry src/locale/lb.js
+1152 silly gunzTarPerm extractEntry src/locale/lo.js
+1153 silly gunzTarPerm extractEntry src/locale/lt.js
+1154 silly gunzTarPerm extractEntry src/locale/is.js
+1155 silly gunzTarPerm extractEntry src/locale/lv.js
+1156 silly gunzTarPerm extractEntry src/locale/id.js
+1157 silly gunzTarPerm extractEntry src/locale/me.js
+1158 silly gunzTarPerm extractEntry src/locale/hy-am.js
+1159 silly gunzTarPerm extractEntry src/locale/mi.js
+1160 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5/node_modules is being purged
+1161 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5/node_modules
+1162 silly gunzTarPerm extractEntry src/locale/hu.js
+1163 silly gunzTarPerm extractEntry src/locale/mk.js
+1164 silly gunzTarPerm extractEntry src/locale/hr.js
+1165 silly gunzTarPerm extractEntry src/locale/ml.js
+1166 silly gunzTarPerm extractEntry src/locale/hi.js
+1167 silly gunzTarPerm extractEntry src/locale/mr.js
+1168 silly gunzTarPerm extractEntry src/locale/he.js
+1169 silly gunzTarPerm extractEntry src/locale/ms-my.js
+1170 silly gunzTarPerm extractEntry src/locale/gl.js
+1171 silly gunzTarPerm extractEntry src/locale/ms.js
+1172 silly gunzTarPerm extractEntry src/locale/gd.js
+1173 silly gunzTarPerm extractEntry src/locale/my.js
+1174 silly gunzTarPerm extractEntry src/locale/fy.js
+1175 silly gunzTarPerm extractEntry src/locale/nb.js
+1176 silly gunzTarPerm extractEntry src/locale/fr.js
+1177 silly gunzTarPerm extractEntry src/locale/ne.js
+1178 silly gunzTarPerm extractEntry src/locale/fr-ch.js
+1179 silly gunzTarPerm extractEntry src/locale/nl-be.js
+1180 silly gunzTarPerm extractEntry src/locale/fr-ca.js
+1181 silly gunzTarPerm extractEntry src/locale/nl.js
+1182 silly gunzTarPerm extractEntry src/locale/fo.js
+1183 silly gunzTarPerm extractEntry src/locale/nn.js
+1184 silly gunzTarPerm extractEntry src/locale/fi.js
+1185 silly gunzTarPerm extractEntry src/locale/pa-in.js
+1186 silly gunzTarPerm extractEntry src/locale/fa.js
+1187 silly gunzTarPerm extractEntry src/locale/pl.js
+1188 silly gunzTarPerm extractEntry src/locale/eu.js
+1189 silly gunzTarPerm extractEntry src/locale/pt-br.js
+1190 silly gunzTarPerm extractEntry src/locale/et.js
+1191 silly gunzTarPerm extractEntry src/locale/pt.js
+1192 silly gunzTarPerm extractEntry src/locale/es.js
+1193 silly gunzTarPerm extractEntry src/locale/ro.js
+1194 silly gunzTarPerm extractEntry src/locale/es-do.js
+1195 silly gunzTarPerm extractEntry src/locale/ru.js
+1196 silly gunzTarPerm extractEntry src/locale/eo.js
+1197 silly gunzTarPerm extractEntry src/locale/se.js
+1198 silly gunzTarPerm extractEntry src/locale/en-nz.js
+1199 silly gunzTarPerm extractEntry src/locale/si.js
+1200 silly gunzTarPerm extractEntry src/locale/en-ie.js
+1201 silly gunzTarPerm extractEntry src/locale/sk.js
+1202 silly gunzTarPerm extractEntry src/locale/en-gb.js
+1203 silly gunzTarPerm extractEntry src/locale/sl.js
+1204 silly gunzTarPerm extractEntry src/locale/en-ca.js
+1205 silly gunzTarPerm extractEntry src/locale/sq.js
+1206 silly gunzTarPerm extractEntry src/locale/en-au.js
+1207 silly gunzTarPerm extractEntry src/locale/sr-cyrl.js
+1208 silly gunzTarPerm extractEntry src/locale/el.js
+1209 silly gunzTarPerm extractEntry src/locale/sr.js
+1210 silly gunzTarPerm extractEntry src/locale/dv.js
+1211 silly gunzTarPerm extractEntry src/locale/ss.js
+1212 silly gunzTarPerm extractEntry src/locale/de.js
+1213 silly gunzTarPerm extractEntry src/locale/sv.js
+1214 silly gunzTarPerm extractEntry src/locale/de-at.js
+1215 silly gunzTarPerm extractEntry src/locale/sw.js
+1216 silly gunzTarPerm extractEntry src/locale/da.js
+1217 silly gunzTarPerm extractEntry src/locale/ta.js
+1218 silly gunzTarPerm extractEntry src/locale/cy.js
+1219 silly gunzTarPerm extractEntry src/locale/te.js
+1220 silly gunzTarPerm extractEntry src/locale/cv.js
+1221 silly gunzTarPerm extractEntry src/locale/tet.js
+1222 silly gunzTarPerm extractEntry src/locale/cs.js
+1223 silly gunzTarPerm extractEntry src/locale/th.js
+1224 silly gunzTarPerm extractEntry src/locale/ca.js
+1225 silly gunzTarPerm extractEntry src/locale/tl-ph.js
+1226 silly gunzTarPerm extractEntry src/locale/bs.js
+1227 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6/node_modules is being purged
+1228 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6/node_modules
+1229 silly gunzTarPerm extractEntry src/locale/tlh.js
+1230 silly gunzTarPerm extractEntry src/locale/br.js
+1231 silly gunzTarPerm extractEntry src/locale/tr.js
+1232 silly gunzTarPerm extractEntry src/locale/bo.js
+1233 silly gunzTarPerm extractEntry src/locale/tzl.js
+1234 silly gunzTarPerm extractEntry src/locale/bn.js
+1235 silly gunzTarPerm extractEntry src/locale/tzm-latn.js
+1236 silly gunzTarPerm extractEntry src/locale/bg.js
+1237 silly gunzTarPerm extractEntry src/locale/tzm.js
+1238 silly gunzTarPerm extractEntry src/locale/be.js
+1239 silly gunzTarPerm extractEntry src/locale/uk.js
+1240 silly gunzTarPerm extractEntry src/locale/az.js
+1241 silly gunzTarPerm extractEntry src/locale/uz.js
+1242 silly gunzTarPerm extractEntry src/locale/ar.js
+1243 silly gunzTarPerm extractEntry src/locale/vi.js
+1244 silly gunzTarPerm extractEntry src/locale/ar-tn.js
+1245 silly gunzTarPerm extractEntry src/locale/x-pseudo.js
+1246 silly gunzTarPerm extractEntry src/locale/ar-sa.js
+1247 silly gunzTarPerm extractEntry src/locale/yo.js
+1248 silly gunzTarPerm extractEntry src/locale/ar-ma.js
+1249 silly gunzTarPerm extractEntry src/locale/zh-cn.js
+1250 silly gunzTarPerm extractEntry src/locale/ar-ly.js
+1251 silly gunzTarPerm extractEntry src/locale/zh-hk.js
+1252 silly gunzTarPerm extractEntry src/locale/ar-dz.js
+1253 silly gunzTarPerm extractEntry src/locale/zh-tw.js
+1254 silly gunzTarPerm extractEntry src/locale/km.js
+1255 silly gentlyRm /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395/node_modules is being purged
+1256 verbose gentlyRm don't care about contents; nuking /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395/node_modules
+1257 silly doParallel preinstall 8
+1258 silly preinstall async@2.1.4 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/async-0af260c5
+1259 info lifecycle async@2.1.4~preinstall: async@2.1.4
+1260 silly preinstall ms@0.7.2 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/ms-37593586
+1261 info lifecycle ms@0.7.2~preinstall: ms@0.7.2
+1262 silly preinstall body-parser@1.15.2 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/body-parser-59af9a37
+1263 info lifecycle body-parser@1.15.2~preinstall: body-parser@1.15.2
+1264 silly preinstall express@4.14.0 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/express-aad1c73c
+1265 info lifecycle express@4.14.0~preinstall: express@4.14.0
+1266 silly preinstall jade@1.11.0 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/jade-469ec033
+1267 info lifecycle jade@1.11.0~preinstall: jade@1.11.0
+1268 silly preinstall moment@2.17.1 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/moment-a36e7395
+1269 info lifecycle moment@2.17.1~preinstall: moment@2.17.1
+1270 silly preinstall mongoose@4.7.6 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/mongoose-d24393d6
+1271 info lifecycle mongoose@4.7.6~preinstall: mongoose@4.7.6
+1272 silly preinstall underscore@1.8.3 /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging/underscore-bbda732a
+1273 info lifecycle underscore@1.8.3~preinstall: underscore@1.8.3
+1274 silly lifecycle async@2.1.4~preinstall: no script for preinstall, continuing
+1275 silly lifecycle ms@0.7.2~preinstall: no script for preinstall, continuing
+1276 silly lifecycle body-parser@1.15.2~preinstall: no script for preinstall, continuing
+1277 silly lifecycle express@4.14.0~preinstall: no script for preinstall, continuing
+1278 silly lifecycle jade@1.11.0~preinstall: no script for preinstall, continuing
+1279 silly lifecycle moment@2.17.1~preinstall: no script for preinstall, continuing
+1280 silly lifecycle mongoose@4.7.6~preinstall: no script for preinstall, continuing
+1281 silly lifecycle underscore@1.8.3~preinstall: no script for preinstall, continuing
+1282 silly doReverseSerial remove 0
+1283 silly doSerial move 0
+1284 silly doSerial finalize 8
+1285 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose/node_modules/async
+1286 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose/node_modules/ms
+1287 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/body-parser
+1288 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/express
+1289 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/jade
+1290 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/moment
+1291 silly finalize /home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose
+1292 verbose unlock done using /home/yanglu/.npm/_locks/staging-03dc53a759d8c059.lock for /home/yanglu/文档/nodeDemo/imovie/node_modules/.staging
+1293 silly rollbackFailedOptional Starting
+1294 silly rollbackFailedOptional Finishing
+1295 silly runTopLevelLifecycles Starting
+1296 silly runTopLevelLifecycles Finishing
+1297 silly install printInstalled
+1298 warn enoent ENOENT: no such file or directory, open '/home/yanglu/文档/nodeDemo/imovie/package.json'
+1299 warn imovie No description
+1300 warn imovie No repository field.
+1301 warn imovie No README data
+1302 warn imovie No license field.
+1303 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose' -> '/home/yanglu/文档/nodeDemo/imovie/node_modules/.mongoose.DELETE'
+1303 verbose stack     at moveAway (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:38:5)
+1303 verbose stack     at destStatted (/usr/local/lib/node_modules/npm/lib/install/action/finalize.js:27:7)
+1303 verbose stack     at FSReqWrap.oncomplete (fs.js:117:15)
+1303 verbose stack
+1303 verbose stack Error: ENOTEMPTY: directory not empty, rename '/home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose' -> '/home/yanglu/文档/nodeDemo/imovie/node_modules/.mongoose.DELETE'
+1303 verbose stack     at Error (native)
+1304 verbose cwd /home/yanglu/文档/nodeDemo/imovie
+1305 error Linux 4.4.0-59-generic
+1306 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "mongoose"
+1307 error node v6.2.0
+1308 error npm  v3.8.9
+1309 error path /home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose
+1310 error code ENOTEMPTY
+1311 error errno -39
+1312 error syscall rename
+1313 error ENOTEMPTY: directory not empty, rename '/home/yanglu/文档/nodeDemo/imovie/node_modules/mongoose' -> '/home/yanglu/文档/nodeDemo/imovie/node_modules/.mongoose.DELETE'
+1314 error If you need help, you may report this error at:
+1314 error     <https://github.com/npm/npm/issues>
+1315 verbose exit [ -39, true ]
