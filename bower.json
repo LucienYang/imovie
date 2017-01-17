@@ -1,0 +1,24 @@
+{
+  "name": "imovie",
+  "homepage": "https://github.com/qwertyanglu/imovie",
+  "authors": [
+    "Lucien Yang"
+  ],
+  "description": "imovie",
+  "main": "",
+  "keywords": [
+    "imovie"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  }
+}
