@@ -1,0 +1,64 @@
+{% extends '../layout.html' %}
+{% block content %}
+<div class="container">
+	<div class="row">
+		<form class="form-horizontal" action="/admin/movie" method="post">
+			<input type="hidden" name="movie[_id]", value="{{ ''+movie._id }}">
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputTitle">
+					电影名字
+				</label>
+				<input type="text" id="inputTitle" class="form-control" name="movie[title]" value="{{ movie.title }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputDoctor">
+					导演
+				</label>
+				<input type="text" id="inputDoctor" class="form-control" name="movie[doctor]" value="{{ movie.doctor }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputCountry">
+					国家
+				</label>
+				<input type="text" id="inputCountry" class="form-control" name="movie[Country]" value="{{ movie.Country }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputLanguage">
+					语种
+				</label>
+				<input type="text" id="inputLanguage" class="form-control" name="movie[language]" value="{{ movie.language }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputPoster">
+					海报地址
+				</label>
+				<input type="text" id="inputPoster" class="form-control" name="movie[poster]" value="{{ movie.poster }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputFlash">
+					片源地址
+				</label>
+				<input type="text" id="inputFlash" class="form-control" name="movie[flash]" value="{{ movie.flash }}">
+			</div>
+
+			<div class="form-group">
+				<label for="" class="col-sm-3 sontrol-label" for="inputYear">
+					上映年代
+				</label>
+				<input type="text" id="inputYear" class="form-control" name="movie[year]" value="{{ movie.year }}">
+			</div>
+			<div class="form-group">
+				<div class="col-md-3">
+					<input type="submit" value="提交">
+				</div>
+			</div>
+		</form>
+		</form>
+	</div>
+</div>
+{% endblock %}

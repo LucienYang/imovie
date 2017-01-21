@@ -9,6 +9,7 @@
     "jade": "^1.11.0",
     "moment": "^2.17.1",
     "mongoose": "^4.7.6",
+    "swig": "^1.4.2",
     "underscore": "^1.8.3"
   },
   "devDependencies": {

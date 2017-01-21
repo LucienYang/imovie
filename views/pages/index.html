@@ -1,0 +1,23 @@
+{% extends '../layout.html' %}
+{% block title %} {{title}} {% endblock %}
+{% block content %}
+	<div class="container">
+		<div class="row">
+			{% for movie in movies %}
+				<div class="col-md-2">
+					<div class="thumbnail">
+						<a href="/movie/{{ ''+movie._id }}">
+							<img src="{{ movie.poster }}" alt="{{ movie.title }}">
+						</a>
+						<div class="caption">
+							<h3>{{ movie.title }}</h3>
+							<p>
+								<a href="/movie/{{ ''+movie._id }" class="btn btn-primary" role="button">观看预告片</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+{% endblock %}

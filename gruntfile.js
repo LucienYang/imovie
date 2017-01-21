@@ -2,7 +2,7 @@ module.exports = function(grunt){
 
 	grunt.initConfig({
 		watch: {
-			jade: {
+			html: {
 				files: ['views/**'],
 				options: {
 					/*会启用一个支持重新加载的服务器，这个服务器工作在上述端口号上，

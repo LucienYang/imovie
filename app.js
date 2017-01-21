@@ -1,4 +1,5 @@
 var express = require('express');
+var swig = require('swig');
 var path = require('path')
 var bodyParser = require('body-parser')
 var _ = require('underscore')
@@ -8,11 +9,14 @@ var app = express();
 var port = process.env.PORT || 8080
 
 app.set('views','./views/pages/');
-app.set('view engine','jade');
+app.set('view engine','html');
+app.engine('html', swig.renderFile);
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'public')))
-app.locals.moment = require('moment')
+//app.locals的各属性值将贯穿程序的整个生命周期，与其相反的是res.locals，它只在这次请求的生命周期中有效
+// app.locals.moment = require('moment')
 app.listen(port);
 
 console.log('server is started at http://localhost:'+port);
