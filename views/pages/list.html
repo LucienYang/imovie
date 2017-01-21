@@ -10,6 +10,7 @@
 		<table class="table table-hover table-bordered">
 			<thead>
 				<tr>
+					<th>序号</th>
 					<th>电影名字</th>
 					<th>导演</th>
 					<th>国家</th>
@@ -23,11 +24,12 @@
 			<tbody>
 				{% for movie in movies %}
 					<tr>
+						<td>{{ loop.index }}</td>
 						<td>{{ movie.title }}</td>
 						<td>{{ movie.doctor }}</td>
 						<td>{{ movie.country }}</td>
 						<td>{{ movie.year }}</td>
-						<td>{{ movie.meta.createdAt|date("YYYY-MM-DD") }}</td>
+						<td>{{ movie.meta.createAt|date('Y-m-d') }}</td>
 						<td>
 							<a href="/movie/{{ ''+movie._id }}" target="_blank">查看</a>
 						</td>
