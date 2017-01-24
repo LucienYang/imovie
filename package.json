@@ -20,7 +20,9 @@
     "gulp-swig": "^0.8.0"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "gulp dev",
+    "build": "rimraf build && gulp build",
+    "test": "node ./build/test.js"
   },
   "repository": {
     "type": "git",

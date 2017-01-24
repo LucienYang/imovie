@@ -6,7 +6,13 @@ var _ = require('underscore')
 var MovieModel = require('./models/MovieModel')
 
 var app = express();
-var port = process.env.PORT || 8080
+var port = process.env.PORT || 4000
+
+//设置swig页面不缓存
+swig.setDefaults({
+  cache: false
+})
+app.set('view cache', false);
 
 app.set('views','./views/pages/');
 app.set('view engine','html');

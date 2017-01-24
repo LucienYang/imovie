@@ -1,55 +1,42 @@
-var gulp = require('gulp');
-var nodemon = require('gulp-nodemon');
-var browserSync = require('browser-sync');
-var livereload = require('gulp-livereload');
-var swig = require('gulp-swig')
-var reload = browserSync.reload;
+var gulp = require('gulp')
+var browserSync = require('browser-sync').create()
+var reload = browserSync.reload
+var nodemon = require('gulp-nodemon')
 
+gulp.task('nodemon', function(done) {
+  var running = false;
 
-gulp.task('default', ['serve', 'nodemon'], function () {
-});
-
-
-// Static Server + watching scss/html files
-gulp.task('serve', function() {
-
-    browserSync({
-        server: "./build"
-    });
-
-    gulp.watch('./views/**/*.html', ['templates'])
-    		.on('change', browserSync.reload);
-});
-
-gulp.task('templates', function() {
-  return gulp.src('./views/**/*.html')
-    .pipe(swig({
-      defaults: {
-        cache: false
-      }
-    }))
-    .pipe(gulp.dest('./build'))
-    .on("end", reload);
-});
-
-gulp.task('nodemon', function (cb) {
-	
-	var started = false;
-	
-	return nodemon({
-		script: 'app.js'
-	})
-	.on('start', function () {
-		// to avoid nodemon being started multiple times
-		// thanks @matthisk
-		if (!started) {
-			cb();
-			started = true; 
-		} 
-	})
-	.on('restart', function () {
-      console.log('restarted!')
+  return nodemon({
+    script: 'app.js',
+    watch: ['views/**/*.html', 'public/**/*.js'],
+    // ext: 'js html',
+    // env: { 'NODE_ENV': 'development' }
+  }).on('start', function() {
+    if (!running) {
+      done();
+      running = true;
+    }
   })
+	.on('restart', function() {
+		setTimeout(function(){
+			reload()
+		},1000)
+	})
+})
 
-});
+gulp.task('browserSync', ['nodemon'], function(){
+	browserSync.init(null, {
+        proxy: 'http://localhost:4000',
+        // browser: 'chrome',
+        notify: false, //加上这句，浏览器自动刷新的时候就不提示 connected success了
+        port: 4001
+  })
+})
+
+gulp.task('server', ['browserSync'], function() {
+    gulp.watch('views/**/*.html').on("change", reload)
+    gulp.watch('public/**/*.js').on("change", reload)
+})
+
+gulp.task('default', ['server'])
 

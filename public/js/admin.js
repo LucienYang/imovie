@@ -1,7 +1,7 @@
 $(function(){
 	$(".add").click(function(){
-		alert(111)
-		window.location = '/admin/movie'
+		alert(333)
+		// window.location = '/admin/movie'
 	})
 	$(".del").click(function(){
 		var _this = this;
