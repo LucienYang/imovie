@@ -21,6 +21,7 @@
   },
   "scripts": {
     "dev": "gulp dev",
+    "start": "gulp",
     "build": "rimraf build && gulp build",
     "test": "node ./build/test.js"
   },

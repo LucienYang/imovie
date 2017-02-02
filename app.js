@@ -16,14 +16,14 @@ app.set('view cache', false);
 
 app.set('views','./views/pages/');
 app.set('view engine','html');
-app.engine('html', swig.renderFile);
+app.engine('html', swig.renderFile)
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static(path.join(__dirname,'public')))
 //app.locals的各属性值将贯穿程序的整个生命周期，与其相反的是res.locals，它只在这次请求的生命周期中有效
 // app.locals.moment = require('moment')
-app.listen(port);
+app.listen(port)
 
 console.log('server is started at http://localhost:'+port);
 
@@ -33,9 +33,9 @@ app.get('/',function(req, res){
 		res.render('index',{
 			title:'imovie 首页 ',
 			movies: movies
-		});
+		})
 	})
-});
+})
 
 
 //detail page
@@ -46,9 +46,9 @@ app.get('/movie/:id',function(req, res){
 		res.render('detail',{
 			title:'imovie 详情页面 ',
 			movie: movie
-		});
+		})
 	})
-});
+})
 
 //list page
 app.get('/admin/list',function(req, res){
@@ -56,9 +56,9 @@ app.get('/admin/list',function(req, res){
 		res.render('list',{
 			title:'imovie 列表 ',
 			movies: movies
-		});
+		})
 	})
-});
+})
 
 //admin update movie
 app.get('/admin/movie/update/:id', function(req, res){
@@ -69,7 +69,7 @@ app.get('/admin/movie/update/:id', function(req, res){
 			res.render('admin',{
 				title:'imovie 更新页面 ',
 				movie: movie
-			});
+			})
 		})
 	}
 })
