@@ -1,64 +1,78 @@
-{% extends '../layout.html' %}
-{% block content %}
-<div class="container">
+{% include "../includes/head.html" %}
+<div class="container" style="width:500px;margin:0 auto;margin-top: 20px">
 	<div class="row">
-		<form class="form-horizontal" action="/admin/movie" method="post">
+		<form class="imovieForm form-horizontal">
 			<input type="hidden" name="movie[_id]", value="{{ ''+movie._id }}">
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputTitle">
+				<label  class="col-xs-2 control-label" for="inputTitle">
 					电影名字
 				</label>
-				<input type="text" id="inputTitle" class="form-control" name="movie[title]" value="{{ movie.title }}">
+				<div class="col-xs-10">
+					<input type="text" id="inputTitle" class="form-control" name="movie[title]" value="{{ movie.title }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputDoctor">
+				<label class="col-xs-2 control-label" for="inputDoctor">
 					导演
 				</label>
+				<div class="col-xs-10">
 				<input type="text" id="inputDoctor" class="form-control" name="movie[doctor]" value="{{ movie.doctor }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputCountry">
+				<label class="col-xs-2 control-label" for="inputCountry">
 					国家
 				</label>
-				<input type="text" id="inputCountry" class="form-control" name="movie[Country]" value="{{ movie.Country }}">
+				<div class="col-xs-10">
+				<input type="text" id="inputCountry" class="form-control" name="movie[country]" value="{{ movie.Country }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputLanguage">
+				<label class="col-xs-2 control-label" for="inputLanguage">
 					语种
 				</label>
+				<div class="col-xs-10">
 				<input type="text" id="inputLanguage" class="form-control" name="movie[language]" value="{{ movie.language }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputPoster">
+				<label class="col-xs-2 control-label" for="inputPoster">
 					海报地址
 				</label>
+				<div class="col-xs-10">
 				<input type="text" id="inputPoster" class="form-control" name="movie[poster]" value="{{ movie.poster }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputFlash">
+				<label class="col-xs-2 control-label" for="inputFlash">
 					片源地址
 				</label>
+				<div class="col-xs-10">
 				<input type="text" id="inputFlash" class="form-control" name="movie[flash]" value="{{ movie.flash }}">
+				</div>
 			</div>
 
 			<div class="form-group">
-				<label for="" class="col-sm-3 sontrol-label" for="inputYear">
+				<label class="col-xs-2 control-label" for="inputYear">
 					上映年代
 				</label>
+				<div class="col-xs-10">
 				<input type="text" id="inputYear" class="form-control" name="movie[year]" value="{{ movie.year }}">
+				</div>
 			</div>
 			<div class="form-group">
-				<div class="col-md-3">
-					<input type="submit" value="提交">
+				<div class="col-md-12 text-center">
+					<input class="btn btn-default add-submit" type="button" value="提交">
+					<input class="btn btn-default add-cancle" type="button" value="取消">
 				</div>
 			</div>
 		</form>
 		</form>
 	</div>
 </div>
-{% endblock %}
+<script type="text/javascript" src="/js/admin.js"></script>

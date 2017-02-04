@@ -67,7 +67,6 @@ app.get('/admin/movie/update/:id', function(req, res){
 		MovieModel.findById(id,function(err, movie){
 			console.log(movie)
 			res.render('admin',{
-				title:'imovie 更新页面 ',
 				movie: movie
 			})
 		})
@@ -79,8 +78,8 @@ app.post('/admin/movie',function(req, res){
 	var id = req.body.movie._id
 	var movieObj = req.body.movie
 	var _movie
-
-	if(id !== 'undefined'){
+	if(id){
+		console.log('1111111111111111111111111111111111')
 		//说明电影已经存在，需要更新
 		MovieModel.findById(id, function(err, movie){
 			if(err) console.log(err)
@@ -88,17 +87,18 @@ app.post('/admin/movie',function(req, res){
 			_movie = _.extend(movie, movieObj)
 			_movie.save(function(err, movie){
 				if(err) console.log(err)
-				res.redirect('/movie/'+movie._id)
+				res.json({success:1, data:_movie})
 			})
 		})
 	}else{
+		console.log('22222222222222222222222222222222222222')
 		//这是一部新电影，我们需要新创建一个MovieModel
 		delete movieObj._id
 		console.log(movieObj)
 		_movie = new MovieModel(movieObj)
 		_movie.save(function(err, movie){
 			if(err) console.log(err)
-			res.redirect('/movie/'+movie._id)
+			res.json({success:1, data:_movie})
 		})
 	}
 })
@@ -106,7 +106,6 @@ app.post('/admin/movie',function(req, res){
 //admin page
 app.get('/admin/movie',function(req, res){
 	res.render('admin',{
-		title:'imovie 管理员页面',
 		movie:{
 			doctor: '',
 			country: '',
@@ -117,8 +116,8 @@ app.get('/admin/movie',function(req, res){
 			flash: '',
 			summary:''
 		}
-	});
-});
+	})
+})
 
 //admin delete item
 app.delete('/admin/movie', function(req, res){
@@ -126,7 +125,7 @@ app.delete('/admin/movie', function(req, res){
 	if(id){
 		MovieModel.removeById(id, function(err){
 			if(err) console.log(err)
-			res.json({success:1})
+			res.json({success:1,data:{_id:id}})
 		})
 	}
 })
