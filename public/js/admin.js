@@ -7,7 +7,6 @@ $(function(){
 		  area: ['600px', '500px'], //宽高
 		  content: '/admin/movie'
 		})
-		// window.location = '/admin/movie'
 	})
 
 	$('.add-submit').click(function(){
@@ -19,9 +18,9 @@ $(function(){
 		})
 		.done(function(data){
 			if(data.success == 1){
-				layer.alert(data.data._id+"添加成功", function(index){
+				parent.layer.alert(data.data.title+"添加成功", function(index){
+					parent.layer.close(index)
 					window.parent.location.reload()
-					parent.layer.closeAll()
 				})
 			}
 		})
@@ -34,23 +33,29 @@ $(function(){
 
 	$(".del").click(function(){
 		var _this = this;
-		var targetId = $(_this).attr('data-id')
-		console.log(targetId);
-		$.ajax({
-			type:'delete',
-			url:'/admin/movie',
-			data:{id:targetId}
+		layer.confirm('是否确认删除',function(){
+			delFun()
+		},function(index){
+			layer.close(index)
 		})
-		.done(function(data){
-			if(data.success == 1){
-				console.log(data)
-				layer.alert(data.data._id+"删除成功", function(index){
-					layer.close(index)
-					window.location.reload()
-				})
-				$(_this).closest('tr').remove()
-			}
-		})
+		var delFun = function(){
+			var targetId = $(_this).attr('data-id')
+			$.ajax({
+				type:'delete',
+				url:'/admin/movie',
+				data:{id:targetId}
+			})
+			.done(function(data){
+				if(data.success == 1){
+					console.log(data)
+					layer.alert(data.data.title+"删除成功", function(index){
+						layer.close(index)
+						window.location.reload()
+					})
+					$(_this).closest('tr').remove()
+				}
+			})
+		}
 	})
 })
 
