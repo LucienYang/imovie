@@ -79,7 +79,6 @@ app.post('/admin/movie',function(req, res){
 	var movieObj = req.body.movie
 	var _movie
 	if(id){
-		console.log('1111111111111111111111111111111111')
 		//说明电影已经存在，需要更新
 		MovieModel.findById(id, function(err, movie){
 			if(err) console.log(err)
@@ -87,11 +86,10 @@ app.post('/admin/movie',function(req, res){
 			_movie = _.extend(movie, movieObj)
 			_movie.save(function(err, movie){
 				if(err) console.log(err)
-				res.json({success:1, data:_movie})
+				res.json({success:2, data:_movie})
 			})
 		})
 	}else{
-		console.log('22222222222222222222222222222222222222')
 		//这是一部新电影，我们需要新创建一个MovieModel
 		delete movieObj._id
 		console.log(movieObj)

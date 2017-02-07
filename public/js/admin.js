@@ -17,13 +17,28 @@ $(function(){
 			data: formData
 		})
 		.done(function(data){
-			if(data.success == 1){
-				parent.layer.alert(data.data.title+"添加成功", function(index){
+			if(data.success >= 1){
+				var message = getAlertMessageByCode(data.success)
+				parent.layer.alert(data.data.title+message, function(index){
 					parent.layer.close(index)
 					window.parent.location.reload()
 				})
 			}
 		})
+
+		var getAlertMessageByCode = function(code){
+			switch(code){
+				case 1:
+					return "添加成功"
+					break
+				case 2:
+					return "更新成功"
+					break
+				default:
+					break
+			}
+		}
+			
 		return false
 	})
 
@@ -40,6 +55,7 @@ $(function(){
 		})
 		var delFun = function(){
 			var targetId = $(_this).attr('data-id')
+			var targetTitle = $(_this).closest("tr").find("td").eq(1).text()
 			$.ajax({
 				type:'delete',
 				url:'/admin/movie',
@@ -48,7 +64,7 @@ $(function(){
 			.done(function(data){
 				if(data.success == 1){
 					console.log(data)
-					layer.alert(data.data.title+"删除成功", function(index){
+					layer.alert(targetTitle+"删除成功", function(index){
 						layer.close(index)
 						window.location.reload()
 					})
