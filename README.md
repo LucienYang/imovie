@@ -8,5 +8,5 @@ how to run:
 ```shell
 npm install
 bower install
-node app.js
+npm start
 ```
