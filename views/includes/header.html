@@ -30,16 +30,16 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
         <h4 class="modal-title" id="exampleModalLabel">登录</h4>
       </div>
+			<form class="loginForm form-horizontal" action="/user/login" method="get">
 	    <div class="modal-body">
 	      <div class="row">
 					<div class="col-xs-12">
-						<form class="loginForm form-horizontal">
 							<div class="form-group">
 								<label class="col-xs-2 control-label" for="username">
 									用户名
 								</label>
 								<div class="col-xs-10">
-								<input type="text" id="username" class="form-control" name="user[username]" value="{{ movie.flash }}">
+								<input type="text" id="username" class="form-control" name="user[username]" value="{{ user.username }}">
 								</div>
 							</div>
 
@@ -48,17 +48,17 @@
 									密码
 								</label>
 								<div class="col-xs-10">
-								<input type="text" id="password" class="form-control" name="user[password]" value="{{ movie.year }}">
+								<input type="text" id="password" class="form-control" name="user[password]" value="{{ user.password }}">
 								</div>
 							</div>
-						</form>
 					</div>
 				</div>
 	    </div>
 	    <div class="modal-footer">
 	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-	        <button type="button" class="btn btn-primary">登录</button>
-	     </div>
+	        <button type="submit" class="btn btn-primary loginBtn">登录</button>
+	    </div>
+			</form>
      </div>
   </div>
 </div>
@@ -68,18 +68,18 @@
     <div class="modal-content" style="width: 500px">
     	<div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">登录</h4>
+        <h4 class="modal-title" id="exampleModalLabel">注册</h4>
       </div>
-	    <div class="modal-body">
-	      <div class="row">
-					<div class="col-xs-12">
-						<form class="loginForm form-horizontal">
+      <form class="registerForm form-horizontal" action="/user/register" method="post">
+		    <div class="modal-body">
+		      <div class="row">
+						<div class="col-xs-12">
 							<div class="form-group">
 								<label class="col-xs-2 control-label" for="username">
 									用户名
 								</label>
 								<div class="col-xs-10">
-								<input type="text" id="username" class="form-control" name="user[username]" value="{{ movie.flash }}">
+								<input type="text" id="username" class="form-control" name="user[username]" value="">
 								</div>
 							</div>
 
@@ -88,17 +88,17 @@
 									密码
 								</label>
 								<div class="col-xs-10">
-								<input type="text" id="password" class="form-control" name="user[password]" value="{{ movie.year }}">
+								<input type="password" id="password" class="form-control" name="user[password]" value="">
 								</div>
 							</div>
-						</form>
+						</div>
 					</div>
-				</div>
-	    </div>
-	    <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-	        <button type="button" class="btn btn-primary">登录</button>
-	     </div>
+		    </div>
+		    <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+		        <button type="submit" class="btn btn-primary registerBtn">注册</button>
+		    </div>
+	    </form>
      </div>
   </div>
 </div>
