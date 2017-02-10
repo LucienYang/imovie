@@ -1,4 +1,4 @@
-var mongoose = require('../db')
+var mongoose = require('../../config/db')
 
 var MovieSchema = new mongoose.Schema({
 	title: String,

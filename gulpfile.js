@@ -8,7 +8,7 @@ gulp.task('nodemon', function(done) {
 
   return nodemon({
     script: 'app.js',
-    watch: ['views/**/*.html', 'public/**/*.js', 'app.js', 'schemas/*.js', 'models/*.js'],
+    watch: ['apps/views/**/*.html', 'public/**/*.js', 'app.js', 'app/**/*.js', 'config/*.js'],
     // 忽略部分对程序运行无影响的文件的改动，nodemon只监视js文件，可用ext项来扩展别的文件类型
     ignore: ["gulpfile.js", "node_modules/", "public/libs/*.*"],
     // ext: 'js html',扩展文件类型
@@ -36,10 +36,10 @@ gulp.task('browserSync', ['nodemon'], function(){
 })
 
 gulp.task('server', ['browserSync'], function() {
-    gulp.watch('views/**/*.html').on("change", reload)
+    gulp.watch('app/views/**/*.html').on("change", reload)
     gulp.watch('public/**/*.js').on("change", reload)
-    gulp.watch('schemas/*.js').on("change", reload)
-    gulp.watch('models/*.js').on("change", reload)
+    gulp.watch('app/**/*.js').on("change", reload)
+    gulp.watch('config/*.js').on("change", reload)
 })
 
 gulp.task('default', ['server'])

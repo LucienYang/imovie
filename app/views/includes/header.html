@@ -7,21 +7,28 @@
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     	<ul class="nav navbar-nav navbar-right">
-        <li><a href="#" id="loginSystem"  data-toggle="modal" data-target="#loginPanel">登录</a></li>
-        <li><a href="#" id="registerSystem"  data-toggle="modal" data-target="#registerPanel">注册</a></li>
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">yanglu <span class="caret"></span></a>
-          <ul class="dropdown-menu">
-            <li><a href="/admin/list">管理员控制台</a></li>
-            <li><a href="#" id="logoutSystem">注销</a></li>
-          </ul>
-        </li>
-        <li><a href="#" id="logoutSystem">注销</a></li>
+    		{% if user %}
+    			<li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ user.username }} <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li><a href="/admin/list">管理员控制台</a></li>
+	            <li><a href="#" id="logoutSystem">注销</a></li>
+	          </ul>
+	        </li>
+	        <li><a href="/logout" id="logoutSystem">注销</a></li>
+    		{% else %}
+    			  <li>
+    			  	<a href="#" id="loginSystem"  data-toggle="modal" data-target="#loginPanel">登录</a></li>
+       			<li>
+       				<a href="#" id="registerSystem"  data-toggle="modal" data-target="#registerPanel">注册</a>
+       			</li>
+    		{% endif %}
+      
+        
       </ul>
     </div>
   </div>
 </nav>
-
 
 <div id="loginPanel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-content">
   <div class="modal-dialog" role="document">

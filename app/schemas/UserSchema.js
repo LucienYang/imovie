@@ -1,4 +1,4 @@
-var mongoose = require('../db')
+var mongoose = require('../../config/db')
 var bcrypt = require('bcrypt')
 var SALT_WORK_FACTOR = 10 //bcrypt默认加盐强度
 

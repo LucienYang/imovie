@@ -1,13 +1,12 @@
 var mongoose = require('mongoose')
+var settings = require('./settings')
 
-//创建数据库连接
-var DB_URL = 'mongodb://127.0.0.1:27017/imovie'
-mongoose.connect(DB_URL)
+mongoose.connect(settings.DB_URL)
 /**
   * 连接成功
   */
 mongoose.connection.on('connected', function () {    
-    console.log('Mongoose connection open to ' + DB_URL);  
+    console.log('Mongoose connection open to ' + settings.DB_URL);  
 });    
 
 /**

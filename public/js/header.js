@@ -35,7 +35,7 @@ $(function(){
 			closeModalDialog($(_this).closest('.modal').attr('id'))
 			console.log(data)
 			if(data.success >= 1){
-				layer.alert(data.data.username)
+				window.location = '/'
 			}else{
 				layer.alert("登录失败！<br>失败原因： "+data.data)
 			}
