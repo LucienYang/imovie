@@ -15,7 +15,7 @@ exports.detail = function(req, res){
 //list page
 exports.list = function(req, res){
 	MovieModel.findAll(function(err, movies){
-		res.render('list',{
+		res.render('movieList',{
 			title:'imovie 列表 ',
 			movies: movies
 		})

@@ -1,0 +1,35 @@
+{% extends '../layout.html' %}
+{% block content %}
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12">
+			<ol class="breadcrumb">
+			  <li><a href="#">管理员控制台</a></li>
+			  <li class="active">电影管理</li>
+			</ol>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-2">
+			<div class="list-group" id="admin-tree">
+			  <a href="#" target-url="/admin/movie/list" class="list-group-item">电影管理</a>
+			  <a href="#" target-url="/admin/user/list" class="list-group-item">用户管理</a>
+			</div>
+		</div>
+		<div class="col-md-10 border" id="subpageContainer">
+			<iframe id="subpageFrame" src="/admin/movie/list" frameborder="o" width="100%" height="600px"></iframe>
+		</div>
+	</div>
+</div>
+<script type="text/javascript" src="/js/admin.js"></script>
+<script type="text/javascript">
+	$('#admin-tree a').click(function(){
+		var _this = this
+		var targetUrl = $(_this).attr('target-url')
+		$('#subpageFrame').attr('src',targetUrl)
+		return false
+	})
+	//$('#admin-tree a:eq(0)').click()
+</script>
+<link rel="stylesheet" type="text/css" href="/css/imovie.css">
+{% endblock %}

@@ -49,3 +49,13 @@ exports.logout = function(req, res){
 	// delete app.locals.user
 	res.redirect('/')
 }
+
+//list page
+exports.list = function(req, res){
+	UserModel.findAll(function(err, users){
+		res.render('userList',{
+			title:'user列表 ',
+			users: users
+		})
+	})
+}

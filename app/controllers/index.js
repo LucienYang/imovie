@@ -8,3 +8,8 @@ exports.index = function(req, res){
 		})
 	})
 }
+
+//index page
+exports.adminConsole = function(req, res){
+	res.render('adminConsole',{})
+}
