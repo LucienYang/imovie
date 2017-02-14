@@ -23,7 +23,10 @@ module.exports = function(app){
 
 	//user
 	app.get('/admin/user/list', User.list)
+	app.delete('/admin/user', User.delete)
+	app.get('/user/registerPage', User.registerPage)
 	app.post('/user/register', User.register)
+	app.get('/user/loginPage', User.loginPage)
 	app.post('/user/login', User.login)
 	app.get('/logout', User.logout)
 }

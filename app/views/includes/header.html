@@ -1,9 +1,14 @@
 <nav class="navbar navbar-inverse navbar-static-top">
-  <div class="container-fluid" style="width: 1000px;margin:0 auto;">
+  <div class="container-fluid">
+  <div class="container">
     <div class="navbar-header">
       <a class="navbar-brand" href="/">
         <img alt="Brand" src="/images/logo.png" width="20" height="20">
       </a>
+      <a class="navbar-brand" href="/">
+        imovie
+      </a>
+
     </div>
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
     	<ul class="nav navbar-nav navbar-right">
@@ -12,100 +17,18 @@
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ user.username }} <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
 	            <li><a href="/adminConsole">管理员控制台</a></li>
-	            <li><a href="#" id="logoutSystem">注销</a></li>
+	            <li><a href="/logout">注销</a></li>
 	          </ul>
 	        </li>
-	        <li><a href="/logout" id="logoutSystem">注销</a></li>
+	        <li><a href="/logout">注销</a></li>
     		{% else %}
     			  <li>
-    			  	<a href="#" id="loginSystem"  data-toggle="modal" data-target="#loginPanel">登录</a></li>
+    			  	<a href="/user/loginPage">登录</a></li>
        			<li>
-       				<a href="#" id="registerSystem"  data-toggle="modal" data-target="#registerPanel">注册</a>
+       				<a href="/user/registerPage">注册</a>
        			</li>
     		{% endif %}
-      
-        
       </ul>
     </div>
   </div>
 </nav>
-
-<div id="loginPanel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-content">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="width: 500px">
-    	<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">登录</h4>
-      </div>
-			<form class="loginForm form-horizontal" action="/user/login" method="get">
-	    <div class="modal-body">
-	      <div class="row">
-					<div class="col-xs-12">
-							<div class="form-group">
-								<label class="col-xs-2 control-label" for="username">
-									用户名
-								</label>
-								<div class="col-xs-10">
-								<input type="text" id="username" class="form-control" name="user[username]" value="{{ user.username }}">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-xs-2 control-label" for="password">
-									密码
-								</label>
-								<div class="col-xs-10">
-								<input type="text" id="password" class="form-control" name="user[password]" value="{{ user.password }}">
-								</div>
-							</div>
-					</div>
-				</div>
-	    </div>
-	    <div class="modal-footer">
-	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-	        <button type="submit" class="btn btn-primary loginBtn">登录</button>
-	    </div>
-			</form>
-     </div>
-  </div>
-</div>
-
-<div id="registerPanel" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="modal-content">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content" style="width: 500px">
-    	<div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="exampleModalLabel">注册</h4>
-      </div>
-      <form class="registerForm form-horizontal" action="/user/register" method="post">
-		    <div class="modal-body">
-		      <div class="row">
-						<div class="col-xs-12">
-							<div class="form-group">
-								<label class="col-xs-2 control-label" for="username">
-									用户名
-								</label>
-								<div class="col-xs-10">
-								<input type="text" id="username" class="form-control" name="user[username]" value="">
-								</div>
-							</div>
-
-							<div class="form-group">
-								<label class="col-xs-2 control-label" for="password">
-									密码
-								</label>
-								<div class="col-xs-10">
-								<input type="password" id="password" class="form-control" name="user[password]" value="">
-								</div>
-							</div>
-						</div>
-					</div>
-		    </div>
-		    <div class="modal-footer">
-		        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-		        <button type="submit" class="btn btn-primary registerBtn">注册</button>
-		    </div>
-	    </form>
-     </div>
-  </div>
-</div>

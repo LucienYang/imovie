@@ -1,5 +1,8 @@
 const UserModel = require('../models/UserModel')
 //注册用户
+exports.registerPage = function(req, res){
+	res.render('register')
+}
 exports.register = function(req, res){
 	var _user = req.body.user
 	var user = new UserModel(_user)
@@ -14,6 +17,9 @@ exports.register = function(req, res){
 }
 
 //用户登录
+exports.loginPage = function(req, res){
+	res.render('login')
+}
 exports.login = function(req, res){
 	var user = req.body.user
 	var _password = user.password
@@ -58,4 +64,15 @@ exports.list = function(req, res){
 			users: users
 		})
 	})
+}
+
+//user delete item
+exports.delete = function(req, res){
+	var id = req.body.id
+	if(id){
+		UserModel.removeById(id, function(err){
+			if(err) console.log(err)
+			res.json({success:1,data:{_id:id}})
+		})
+	}
 }

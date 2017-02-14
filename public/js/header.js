@@ -9,10 +9,9 @@ $(function(){
 			data: formData
 		})
 		.done(function(data){
-			closeModalDialog($(_this).closest('.modal').attr('id'))
 			if(data.success >= 1){
 				layer.confirm(data.data.username+'注册成功！<br>是否直接登录？', function(index){
-					layer.close(index)
+					 window.location = '/user/loginPage'
 				},function(index){
 					layer.close(index)
 				})
@@ -32,8 +31,6 @@ $(function(){
 			data: formData
 		})
 		.done(function(data){
-			closeModalDialog($(_this).closest('.modal').attr('id'))
-			console.log(data)
 			if(data.success >= 1){
 				window.location = '/'
 			}else{
