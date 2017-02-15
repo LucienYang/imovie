@@ -42,5 +42,11 @@ gulp.task('server', ['browserSync'], function() {
     gulp.watch('config/*.js').on("change", reload)
 })
 
+gulp.task('set-dev-env', function () {
+    return process.env.NODE_ENV = 'development';
+})
+
+
 gulp.task('default', ['server'])
+gulp.task('dev', ['set-dev-env', 'server'])
 

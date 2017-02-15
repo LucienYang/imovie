@@ -11,6 +11,9 @@ const mongoStore = require('connect-mongo')(session)
 const app = express();
 const port = process.env.PORT || 4000
 
+console.log('1111111111111111')
+console.log(process.env.NODE_ENV)
+
 //设置swig页面不缓存
 swig.setDefaults({
   cache: false
