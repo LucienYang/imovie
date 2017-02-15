@@ -48,7 +48,7 @@ exports.save = function(req, res){
 			_movie = _.extend(movie, movieObj)
 			_movie.save(function(err, movie){
 				if(err) console.log(err)
-				res.json({success:2, data:_movie})
+				return res.json({success:2, data:_movie})
 			})
 		})
 	}else{
@@ -58,7 +58,7 @@ exports.save = function(req, res){
 		_movie = new MovieModel(movieObj)
 		_movie.save(function(err, movie){
 			if(err) console.log(err)
-			res.json({success:1, data:_movie})
+			return res.json({success:1, data:_movie})
 		})
 	}
 }
@@ -85,7 +85,7 @@ exports.delete = function(req, res){
 	if(id){
 		MovieModel.removeById(id, function(err){
 			if(err) console.log(err)
-			res.json({success:1,data:{_id:id}})
+			return res.json({success:1,data:{_id:id}})
 		})
 	}
 }

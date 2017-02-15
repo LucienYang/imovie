@@ -9,6 +9,9 @@ $(function(){
 			data: formData
 		})
 		.done(function(data){
+			console.log('---------done-----------')
+			console.log(data)
+			console.log('----------done----------')
 			if(data.success >= 1){
 				layer.confirm(data.data.username+'注册成功！<br>是否直接登录？', function(index){
 					 window.location = '/user/loginPage'
@@ -18,6 +21,11 @@ $(function(){
 			}else{
 				layer.alert("注册失败！<br>失败原因： "+data.data)
 			}
+		})
+		.fail(function(data){
+			console.log('----------fail----------')
+			console.log(data)
+			console.log('----------fail----------')
 		})
 		return false
 	})
