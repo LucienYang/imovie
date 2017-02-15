@@ -1,11 +1,11 @@
 {% extends '../layout.html' %}
 {% block title %} {{title}} {% endblock %}
 {% block content %}
-
+<div class="container">
 	<div class="row">
-		<div class="col-xs-12">
+		<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
 			<div id="loginPanel">
-			  <div class="modal-dialog" role="document">
+			  <div role="document">
 			    <div class="modal-content">
 			    	<div class="modal-header">
 			        <h4 class="modal-title" id="exampleModalLabel">登录</h4>
@@ -40,6 +40,6 @@
 			</div>
 		</div>
 	</div>
-
+</div>
 <script type="text/javascript" src="/js/header.js"></script>
 {% endblock %}
