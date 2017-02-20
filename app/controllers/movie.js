@@ -1,14 +1,23 @@
 const MovieModel = require('../models/MovieModel')
+const CommentsModel = require('../models/CommentsModel')
 const _ = require('underscore')
 //detail page
 exports.detail = function(req, res){
 	var id = req.params.id
+	
 	MovieModel.findById(id,function(err, movie){
-		console.log(movie)
-		res.render('detail',{
-			title:'imovie 详情页面 ',
-			movie: movie
-		})
+		CommentsModel
+		.find({movie: id})
+		.populate('from', 'username')
+		.exec(function(err, comments){
+			if(comments && comments.length > 0){
+				res.render('detail',{
+					title:'imovie 详情页面 ',
+					movie: movie,
+					comments: comments
+				})	
+			}
+		})		
 	})
 }
 
@@ -88,4 +97,17 @@ exports.delete = function(req, res){
 			return res.json({success:1,data:{_id:id}})
 		})
 	}
+}
+
+exports.comments = function(req, res){
+	var _comments = req.body.comments
+	console.log(_comments)
+	var _movieId = _comments.movie
+	var comments = new CommentsModel(_comments)
+	comments.save(function(err, comments){
+		console.log('movie id is : ')
+		console.log(_movieId)
+		if(err) console.log(err)
+		res.redirect("/movie/"+_movieId)
+	})
 }

@@ -24,6 +24,7 @@ exports.login = function(req, res){
 	var user = req.body.user
 	var _password = user.password
 	UserModel.findOne({username:user.username}, function(err, user){
+		console.log(user)
 		if(err){
 			console.log(err)
 			return res.json({success:0,data:err.message})
@@ -76,5 +77,25 @@ exports.delete = function(req, res){
 			if(err) console.log(err)
 			return res.json({success:1,data:{_id:id}})
 		})
+	}
+}
+
+//require user login
+exports.requireLogin = function(req, res, next){
+	var _user = req.session.user
+	if(_user){
+		next()
+	}else{
+		res.redirect("/user/loginPage")
+	}
+}
+
+//require admin
+exports.requireAdmin = function(req, res, next){
+	var _user = req.session.user
+	if(_user.role == 'admin'){
+		next()
+	}else{
+		res.redirect("/")
 	}
 }

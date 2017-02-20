@@ -35,7 +35,7 @@ $(function(){
 		var formData = $('.loginForm').serializeArray()
 		$.ajax({
 			type:'post',
-			url: '/user/login',
+			url: '/login',
 			data: formData
 		})
 		.done(function(data){

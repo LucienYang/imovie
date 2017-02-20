@@ -11,22 +11,23 @@ module.exports = function(app){
 
 	//index
 	app.get('/',Index.index)
-	app.get('/adminConsole',Index.adminConsole)
+	app.get('/adminConsole', User.requireLogin, User.requireAdmin,Index.adminConsole)
 
 	//movie
 	app.get('/movie/:id', Movie.detail)
-	app.get('/admin/movie/list', Movie.list)
-	app.get('/admin/movie/update/:id', Movie.update)
-	app.post('/admin/movie', Movie.save)
-	app.get('/admin/movie', Movie.admin)
-	app.delete('/admin/movie', Movie.delete)
+	app.get('/admin/movie/list', User.requireLogin, User.requireAdmin, Movie.list)
+	app.get('/admin/movie/update/:id', User.requireLogin, User.requireAdmin, Movie.update)
+	app.post('/admin/movie', User.requireLogin, User.requireAdmin, Movie.save)
+	app.get('/admin/movie', User.requireLogin, User.requireAdmin, Movie.admin)
+	app.delete('/admin/movie', User.requireLogin, User.requireAdmin, Movie.delete)
+	app.post('/movie/comments', User.requireLogin, Movie.comments)
 
 	//user
-	app.get('/admin/user/list', User.list)
-	app.delete('/admin/user', User.delete)
+	app.get('/admin/user/list', User.requireLogin, User.requireAdmin, User.list)
+	app.delete('/admin/user', User.requireLogin, User.requireAdmin, User.delete)
 	app.get('/user/registerPage', User.registerPage)
 	app.post('/user/register', User.register)
 	app.get('/user/loginPage', User.loginPage)
-	app.post('/user/login', User.login)
+	app.post('/login', User.login)
 	app.get('/logout', User.logout)
 }

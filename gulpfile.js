@@ -46,7 +46,10 @@ gulp.task('set-dev-env', function () {
     return process.env.NODE_ENV = 'development';
 })
 
+gulp.task('set-production-env', function () {
+    return process.env.NODE_ENV = 'production';
+})
 
-gulp.task('default', ['server'])
+gulp.task('default', ['set-production-env', 'server'])
 gulp.task('dev', ['set-dev-env', 'server'])
 

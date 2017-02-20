@@ -1,13 +1,20 @@
 {% extends '../layout.html' %}
 {% block content %}
+<style type="text/css">
+	.comments-item{
+		border-left: none;
+		border-right: none;
+		border-top: none;
+	}
+</style>
 <div class="container">
 	<div class="row">
-		<div class="col-md-7">
+		<div class="col-xs-12 col-sm-12 col-md-7">
 			<embed src="{{ movie.flash }}" allowFullScreen="true" quality="high" width="600", height="400" align="middle" type="application/x-shockwave-flash">
 				
 			</embed>
 		</div>
-		<div class="col-md-5">
+		<div class="col-xs-12 col-sm-12 col-md-5">
 			<dl class="dl-horzontal">
 				<dt>电影名字</dt>
 				<dd>{{ movie.title }}</dd>
@@ -24,5 +31,57 @@
 			</dl>
 		</div>
 	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6">
+			<h3>
+				评论区
+				<button type="button" class="btn btn-primary pull-right" id="commentsBtn">评论</button>
+			</h3>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12 col-sm-12 col-md-6">
+			<div class="list-group">
+				{% for comment in comments %}
+				<div class="media list-group-item comments-item">
+				  <div class="media-left">
+				    <a href="#">
+				      <img class="media-object" src="/images/ironman.png" alt="ironman" width="35px" height="35px">
+				    </a>
+				  </div>
+				  <div class="media-body">
+				    <h4 class="media-heading">
+					    <span>{{ ''+comment.from.username }}</span>
+					    <small class="pull-right">{{ comment.meta.updateAt|date('Y-m-d G:i:s') }}</small>
+				    </h4>
+				    {{ comment.content }}
+				    <a class="btn btn-primary btn-xs replyBtn">回复</a>
+				  </div>
+				</div>
+				{% endfor %}
+			</div>
+		</div> 
+	</div>
 </div>
+
+<!-- commentsModal -->
+<div class="modal fade" id="commentsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+    	<form action="/movie/comments" method="post">
+	      <div class="modal-body">
+	      	<input type="hidden" name="comments[movie]" value="{{ ''+movie._id }}">
+	      	<input type="hidden" name="comments[from]" value="{{ ''+user._id }}">
+	      	<!-- <input type="hidden" name="comments[to]"> -->
+	        <textarea class="form-control" name="comments[content]" rows="3" placeholder="评论电影"></textarea>
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
+	        <button type="submit" class="btn btn-primary">确认</button>
+	      </div>
+      </form>
+    </div>
+  </div>
+</div>
+<script type="text/javascript" src="/js/comments.js"></script>
 {% endblock %}
