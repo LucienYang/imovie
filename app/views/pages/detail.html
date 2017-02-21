@@ -42,6 +42,7 @@
 	<div class="row">
 		<div class="col-xs-12 col-sm-12 col-md-6">
 			<div class="list-group">
+			{% if comments && comments.length>0 %}
 				{% for comment in comments %}
 				<div class="media list-group-item comments-item">
 				  <div class="media-left">
@@ -55,10 +56,34 @@
 					    <small class="pull-right">{{ comment.meta.updateAt|date('Y-m-d G:i:s') }}</small>
 				    </h4>
 				    {{ comment.content }}
-				    <a class="btn btn-primary btn-xs replyBtn">回复</a>
+				    <a class="btn btn-primary btn-xs replyBtn" data-fromid="{{ ''+user._id }}"  data-toid="{{ ''+comment.from._id }}" data-commentid="{{ ''+comment._id }}">回复</a>
+				    {% if comment.reply && comment.reply.length>0 %}
+				    {% for reply in comment.reply %}
+				    	<div class="media">
+							  <div class="media-left">
+							    <a href="#">
+							      <img class="media-object" src="/images/ironman.png" alt="ironman" width="35px" height="35px">
+							    </a>
+							  </div>
+							  <div class="media-body">
+							    <h4 class="media-heading">
+								    <span>{{ ''+reply.from.username }}回复{{ ''+reply.to.username }}</span>
+								    <small class="pull-right">{{ comment.meta.updateAt|date('Y-m-d G:i:s') }}</small>
+							    </h4>
+							    {{ reply.content }}
+							    <a class="btn btn-primary btn-xs replyBtn" data-fromid="{{ ''+user._id }}"  data-toid="{{ ''+reply.from._id }}" data-commentid="{{ ''+comment._id }}">回复</a>
+							  </div>
+							</div>
+				    {% endfor %}
+				    {% endif %}
 				  </div>
 				</div>
 				{% endfor %}
+			{% else %}
+				<div class="media">
+					<h4 style="text-align: center;color: #ddd;">还没有人评论，来点评论吧</h4>
+				</div>
+			{% endif %}
 			</div>
 		</div> 
 	</div>
@@ -68,7 +93,7 @@
 <div class="modal fade" id="commentsModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-    	<form action="/movie/comments" method="post">
+    	<form action="/movie/comments" method="post" id="commentsForm">
 	      <div class="modal-body">
 	      	<input type="hidden" name="comments[movie]" value="{{ ''+movie._id }}">
 	      	<input type="hidden" name="comments[from]" value="{{ ''+user._id }}">

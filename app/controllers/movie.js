@@ -9,6 +9,8 @@ exports.detail = function(req, res){
 		CommentsModel
 		.find({movie: id})
 		.populate('from', 'username')
+		.populate('reply.from', 'username')
+		.populate('reply.to', 'username')
 		.exec(function(err, comments){
 			if(comments && comments.length > 0){
 				res.render('detail',{
@@ -16,6 +18,11 @@ exports.detail = function(req, res){
 					movie: movie,
 					comments: comments
 				})	
+			}else{
+				res.render('detail',{
+					title:'imovie 详情页面 ',
+					movie: movie
+				})
 			}
 		})		
 	})
@@ -101,13 +108,26 @@ exports.delete = function(req, res){
 
 exports.comments = function(req, res){
 	var _comments = req.body.comments
-	console.log(_comments)
 	var _movieId = _comments.movie
-	var comments = new CommentsModel(_comments)
-	comments.save(function(err, comments){
-		console.log('movie id is : ')
-		console.log(_movieId)
-		if(err) console.log(err)
-		res.redirect("/movie/"+_movieId)
-	})
+	//说明有子评论
+	if(_comments.fromId && _comments.toId && _comments.commentId){
+		CommentsModel.findById(_comments.commentId, function(err, comment){
+			var reply = {
+				from: _comments.fromId,
+				to: _comments.toId,
+				content: _comments.content
+			}
+			comment.reply.push(reply)
+			comment.save(function(err, comments){
+				if(err) console.log(err)
+				res.redirect("/movie/"+_movieId)
+			})
+		})
+	}else{
+		var comments = new CommentsModel(_comments)
+		comments.save(function(err, comments){
+			if(err) console.log(err)
+			res.redirect("/movie/"+_movieId)
+		})
+	}
 }
