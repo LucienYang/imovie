@@ -2,21 +2,25 @@ const MovieModel = require('../models/MovieModel')
 const CommentsModel = require('../models/CommentsModel')
 const _ = require('underscore')
 //detail page
+
 exports.detail = function(req, res){
-	var id = req.params.id
+	var _this = this
+	var movieId = req.params.id
 	
-	MovieModel.findById(id,function(err, movie){
+	MovieModel.findById(movieId,function(err, movie){
 		CommentsModel
-		.find({movie: id})
+		.find({movie: movieId})
 		.populate('from', 'username')
 		.populate('reply.from', 'username')
 		.populate('reply.to', 'username')
 		.exec(function(err, comments){
+			var totalCount = getTotalCount(comments)
 			if(comments && comments.length > 0){
 				res.render('detail',{
 					title:'imovie 详情页面 ',
 					movie: movie,
-					comments: comments
+					comments: comments,
+					totalCount: totalCount
 				})	
 			}else{
 				res.render('detail',{
@@ -26,7 +30,24 @@ exports.detail = function(req, res){
 			}
 		})		
 	})
+
+	var getTotalCount = function(comments){
+		var count = 0
+		for(var i=0;i<comments.length;i++){
+			if(comments[i].reply && comments[i].reply.length>0 ){
+				count += (comments[i].reply.length+1)
+			}else{
+				count += 1
+			}
+		}
+		console.log('total count is : '+count)
+		return count
+	}
+	
 }
+
+
+
 
 //list page
 exports.list = function(req, res){

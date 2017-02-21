@@ -41,6 +41,7 @@ CommentsSchema.pre('save', function(next){
 	next()
 })
 
+
 CommentsSchema.statics = {
 	findAll : function(options, cb){
 		this.find(options)
@@ -56,6 +57,21 @@ CommentsSchema.statics = {
 		this.remove({_id:id})
 				.exec(cb)
 	}
+	/*,
+	selectCommentCount : function(options,cb){
+
+		this.aggregate(
+			[
+			{ $match: options},
+			{ $unwind: { path: "$reply", preserveNullAndEmptyArrays: true } },
+			{$group: { _id: "$movie", count: { $sum: 1 }}}
+			], 
+		  function (err, res) {
+		  	if (err) console.log(err)
+		    cb(err, res)
+			}
+		)
+	}*/
 }
 
 module.exports = CommentsSchema
