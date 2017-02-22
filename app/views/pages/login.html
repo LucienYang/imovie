@@ -42,4 +42,11 @@
 	</div>
 </div>
 <script type="text/javascript" src="/js/header.js"></script>
+<script type="text/javascript">
+	$(function(){
+		if (self != top) { 
+			parent.window.location = '/user/loginPage';
+		}
+	})
+</script>
 {% endblock %}
