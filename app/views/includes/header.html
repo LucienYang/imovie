@@ -23,7 +23,9 @@
     			<li class="dropdown">
 	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">{{ user.username }} <span class="caret"></span></a>
 	          <ul class="dropdown-menu">
+            {% if user.role == 'admin' %}
 	            <li><a href="/adminConsole">管理员控制台</a></li>
+            {% endif %}
 	            <li><a href="/logout">注销</a></li>
 	          </ul>
 	        </li>

@@ -1,6 +1,7 @@
 var Index = require('../app/controllers/index')
 var Movie = require('../app/controllers/movie')
-var User = require('../app/controllers/user.js')
+var User = require('../app/controllers/user')
+var Categtory = require('../app/controllers/categories')
 
 module.exports = function(app){
 	//pre handle login user
@@ -30,4 +31,15 @@ module.exports = function(app){
 	app.get('/user/loginPage', User.loginPage)
 	app.post('/login', User.login)
 	app.get('/logout', User.logout)
+
+	//categories
+	app.get('/admin/categtories', User.requireLogin, User.requireAdmin, Categtory.list)
+	app.get('/admin/categtories/new', User.requireLogin, User.requireAdmin, Categtory.detail)
+	app.post('/admin/categtories', User.requireLogin, User.requireAdmin, Categtory.save)
+	//编辑
+	app.get('/admin/categtories/:categoryId', User.requireLogin, User.requireAdmin, Categtory.update)
+	app.delete('/admin/categtories/:categoryId', User.requireLogin, User.requireAdmin, Categtory.delete)
+	//更新
+	app.put('/admin/categtories/:categoryId', User.requireLogin, User.requireAdmin, Categtory.save)
+
 }

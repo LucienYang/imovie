@@ -29,7 +29,7 @@ app.use(session({
 	store: new mongoStore({
 		mongooseConnection: mongoose.connection,
 		collection: 'sessions', //不写的话default: sessions
-		ttl: 1 * 60 //14 * 24 * 60 * 60 = 14天
+		ttl: 5 * 60 //14 * 24 * 60 * 60 = 14天
 	}),
 	resave: false,
   saveUninitialized: true,

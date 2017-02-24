@@ -11,7 +11,7 @@ $(function(){
 
 	$('.add-submit').click(function(){
 		var formData = $('.imovieForm').serializeArray();
-		$.ajax({
+		$.ajax({ 
 			type:'post',
 			url: '/admin/movie',
 			data: formData
@@ -21,7 +21,7 @@ $(function(){
 				var message = getAlertMessageByCode(data.success)
 				parent.layer.alert(data.data.title+message, function(index){
 					parent.layer.close(index)
-					window.parent.location.reload()
+					parent.window.location.reload()
 				})
 			}
 		})
@@ -73,14 +73,16 @@ $(function(){
 			})
 		}
 	})
+
+	$(".update").click(function(){
+		var movieid = $(this).data('id')
+		layer.open({
+		  type: 2,
+		  title:'更新电影',
+		  skin: 'layui-layer-rim', //加上边框
+		  area: ['600px', '500px'], //宽高
+		  content: '/admin/movie/update/'+movieid
+		})
+	})
 })
 
-function updateMovie(movieid){
-	layer.open({
-	  type: 2,
-	  title:'更新电影',
-	  skin: 'layui-layer-rim', //加上边框
-	  area: ['600px', '500px'], //宽高
-	  content: '/admin/movie/update/'+movieid
-	})
-}
