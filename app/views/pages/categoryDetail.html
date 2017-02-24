@@ -1,0 +1,24 @@
+{% include "../includes/head.html" %}
+<div class="container" style="width:500px;margin:0 auto;margin-top: 20px">
+	<div class="row">
+		<form class="categoryForm form-horizontal">
+			<input type="hidden" name="categories[_id]" value="{{ ''+category._id }}">
+			<div class="form-group">
+				<label  class="col-xs-2 control-label" for="categoryName">
+					分类名称
+				</label>
+				<div class="col-xs-10">
+					<input type="text" id="categoryName" class="form-control" name="categories[name]" value="{{ category.name }}">
+				</div>
+			</div>
+			<div class="form-group">
+				<div class="col-md-12 text-center">
+					<input class="btn btn-default add-submit" type="button" value="提交">
+					<input class="btn btn-default add-cancle" type="button" value="取消">
+				</div>
+			</div>
+		</form>
+		</form>
+	</div>
+</div>
+<script type="text/javascript" src="/js/category.js"></script>

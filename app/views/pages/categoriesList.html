@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>userlist</title>
+	{% include "../includes/head.html" %}
+</head>
+<body>
+	<div class="container" style="width: 100%;margin:0 auto;">
+		<div class="row list-margin-bottom">
+			<div class="col-md-3">
+				<button class="btn btn-primary add">添加</button>
+			</div>
+		</div>
+		<div class="row">
+			<table class="table table-hover table-bordered">
+				<thead>
+					<tr>
+						<th>序号</th>
+						<th>分类名</th>
+						<th>录入时间</th>
+						<th>更新</th>
+						<th>删除</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for category in categories %}
+						<tr>
+							<td>{{ loop.index }}</td>
+							<td>{{ category.name }}</td>
+							<td>{{ category.meta.createAt|date('Y-m-d') }}</td>
+							<td>
+								<button class="btn btn-danger update" data-id="{{ ''+category._id }}">更新</button>	
+							</td>
+							<td>
+								<button class="btn btn-danger del" data-id="{{ ''+category._id }}">删除</button>	
+							</td>
+						</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+	<script type="text/javascript" src="/js/category.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/imovie.css">
+</body>
+</html>
+
+
+
+
+
