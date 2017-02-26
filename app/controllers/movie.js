@@ -1,5 +1,6 @@
 const MovieModel = require('../models/MovieModel')
 const CommentsModel = require('../models/CommentsModel')
+const CategoriesModel = require('../models/CategoriesModel')
 const _ = require('underscore')
 //detail page
 
@@ -7,11 +8,15 @@ exports.detail = function(req, res){
 	var _this = this
 	var movieId = req.params.id
 	
-	MovieModel.findById(movieId,function(err, movie){
+	MovieModel
+	.findOne({_id: movieId})
+	.populate('categories', 'name')
+	.exec(function(err, movie){
 		CommentsModel
 		.find({movie: movieId})
 		.populate('from', 'username')
 		.populate('reply.from', 'username')
+		.populate('reply.to', 'username')
 		.populate('reply.to', 'username')
 		.exec(function(err, comments){
 			var totalCount = getTotalCount(comments)
@@ -51,7 +56,10 @@ exports.detail = function(req, res){
 
 //list page
 exports.list = function(req, res){
-	MovieModel.findAll(function(err, movies){
+	MovieModel
+	.find({})
+	.populate('categories')
+	.exec(function(err, movies){
 		res.render('movieList',{
 			title:'imovie 列表 ',
 			movies: movies
@@ -63,11 +71,16 @@ exports.list = function(req, res){
 exports.update = function(req, res){
 	var id = req.params.id
 	if(id){
+
 		MovieModel.findById(id,function(err, movie){
-			console.log(movie)
-			res.render('admin',{
-				movie: movie
+			CategoriesModel.find({}).exec(function(err, categories){
+				console.log(categories)
+				res.render('admin',{
+					movie: movie,
+					categories: categories
+				})
 			})
+			
 		})
 	}
 }
@@ -83,36 +96,56 @@ exports.save = function(req, res){
 			if(err) console.log(err)
 			//使用underscore extends方法继承
 			_movie = _.extend(movie, movieObj)
-			_movie.save(function(err, movie){
-				if(err) console.log(err)
-				return res.json({success:2, data:_movie})
-			})
 		})
 	}else{
 		//这是一部新电影，我们需要新创建一个MovieModel
 		delete movieObj._id
-		console.log(movieObj)
 		_movie = new MovieModel(movieObj)
+	}
+
+	var categoriesId = movieObj.categories
+
+	CategoriesModel.findOne({_id: categoriesId}).exec(function(err, categories){
+		if(err) console.log(err)
+		console.log(categories)
+		
 		_movie.save(function(err, movie){
 			if(err) console.log(err)
-			return res.json({success:1, data:_movie})
+			categories.movies.push(movie._id)
+			categories.save(function(err, categories){
+				if(err){
+					console.log(err)
+					return res.json({success:0, data:err.message})
+				}else{
+					if(id){
+						return res.json({success:2, data:_movie})
+					}else{
+						return res.json({success:1, data:_movie})
+					}
+				}
+				
+			})
 		})
-	}
+	})
 }
 
 //admin page
 exports.admin = function(req, res){
-	res.render('admin',{
-		movie:{
-			doctor: '',
-			country: '',
-			title: '',
-			year: '',
-			poster:"",
-			language: '',
-			flash: '',
-			summary:''
-		}
+	CategoriesModel.find({}).exec(function(err, categories){
+		console.log(categories)
+		res.render('admin',{
+			movie:{
+				doctor: '',
+				country: '',
+				title: '',
+				year: '',
+				poster:"",
+				language: '',
+				flash: '',
+				summary:''
+			},
+			categories: categories
+		})
 	})
 }
 

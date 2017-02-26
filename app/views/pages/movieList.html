@@ -21,6 +21,7 @@
 						<th>导演</th>
 						<th>国家</th>
 						<th>上映年代</th>
+						<th>电影分类</th>
 						<th>录入时间</th>
 						<th>查看</th>
 						<th>更新</th>
@@ -35,6 +36,7 @@
 							<td>{{ movie.doctor }}</td>
 							<td>{{ movie.country }}</td>
 							<td>{{ movie.year }}</td>
+							<td>{{ movie.categories.name }}</td>
 							<td>{{ movie.meta.createAt|date('Y-m-d') }}</td>
 							<td>
 								<a href="/movie/{{ ''+movie._id }}" class="btn btn-default update" role="button" target="_blank">查看</a>

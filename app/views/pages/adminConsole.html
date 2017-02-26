@@ -28,6 +28,7 @@
 		var _this = this
 		var targetUrl = $(_this).attr('target-url')
 		$('#subpageFrame').attr('src',targetUrl)
+		$('.breadcrumb li:eq(1)').text($(_this).text())
 		return false
 	})
 	//$('#admin-tree a:eq(0)').click()

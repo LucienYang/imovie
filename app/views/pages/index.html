@@ -3,21 +3,28 @@
 {% block content %}
 	<div class="container border" style="margin:0 auto;">
 		<div class="row">
-			{% for movie in movies %}
-				<div class="col-md-2 col-sm-6 col-xs-12">
-					<div class="thumbnail">
-						<a href="/movie/{{ ''+movie._id }}">
-							<img src="{{ movie.poster }}" alt="{{ movie.title }}">
-						</a>
-						<div class="caption">
-							<h3>{{ movie.title }}</h3>
-							<p>
-								<a href="/movie/{{ ''+movie._id }}" class="btn btn-primary" role="button">观看预告片</a>
-							</p>
+		{% for category in categories %}
+		<div class="panel panel-default">
+		  <div class="panel-heading">{{ category.name }}</div>
+		  <div class="panel-body">
+		    {% for movie in category.movies %}
+					<div class="col-md-2 col-sm-6 col-xs-12">
+						<div class="thumbnail">
+							<a href="/movie/{{ ''+movie._id }}">
+								<img src="{{ movie.poster }}" alt="{{ movie.title }}">
+							</a>
+							<div class="caption">
+								<h3>{{ movie.title }}</h3>
+								<p>
+									<a href="/movie/{{ ''+movie._id }}" class="btn btn-primary" role="button">观看预告片</a>
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
-			{% endfor %}
+				{% endfor %}
+		  </div>
+		</div>
+		{% endfor %}	
 		</div>
 	</div>
 {% endblock %}

@@ -65,11 +65,15 @@ exports.findCategoriesAndMovie = function(req, res){
 			console.log(err)
 			return res.json({success:0,data:err.message})
 		}
-		console.log(category)
-		res.render('categoriesList',{
-			title:'categories 列表 ',
+		console.log(categories)
+		res.render('index', {
+			title:'imovie 首页 ',
 			categories: categories
 		})
+		/*res.render('categoriesList',{
+			title:'categories 列表 ',
+			categories: categories
+		})*/
 	})
 }  
 

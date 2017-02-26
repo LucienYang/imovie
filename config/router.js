@@ -11,7 +11,8 @@ module.exports = function(app){
 	})
 
 	//index
-	app.get('/',Index.index)
+	//app.get('/',Index.index)
+	app.get('/',Categtory.findCategoriesAndMovie)
 	app.get('/adminConsole', User.requireLogin, User.requireAdmin,Index.adminConsole)
 
 	//movie
